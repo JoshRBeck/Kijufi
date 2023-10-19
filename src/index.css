@@ -1,0 +1,117 @@
+/* Halcyon Black Fonts */
+@font-face {
+	font-family: 'Halcyon Black';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Black.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Black';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Black\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Bold Fonts */
+@font-face {
+	font-family: 'Halcyon Bold';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Bold.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Bold';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Bold\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Hairline Fonts */
+@font-face {
+	font-family: 'Halcyon Hairline';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Hairline.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Hairline';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Hairline\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Light Fonts */
+@font-face {
+	font-family: 'Halcyon Light';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Light.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Light';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Light\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Medium Fonts */
+@font-face {
+	font-family: 'Halcyon Medium';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Medium.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Medium';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Medium\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Regular Fonts */
+@font-face {
+	font-family: 'Halcyon Regular';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Regular.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Regular';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Regular\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Semibold Fonts */
+@font-face {
+	font-family: 'Halcyon Semibold';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ SemiBold.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Semibold';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ SemiBold\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+/* Halcyon Thin Fonts */
+@font-face {
+	font-family: 'Halcyon Thin';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Thin.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Halcyon Thin';
+	src: url('../public/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Thin\ Italic.otf') format('otf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Halcyon', sans-serif;
+}
+
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
