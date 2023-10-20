@@ -7,6 +7,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Impressum from "./Pages/Impressum";
 import Zeichnungen from "./Components/ImagesDisplay";
+import Datenschutz from "./Pages/Datenschutz";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="impressum" element={<Impressum />} />
         <Route path="zeichnungen" element={<Zeichnungen />} />
+        <Route path="datenschutz" element={<Datenschutz />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
