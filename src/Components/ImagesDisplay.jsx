@@ -48,15 +48,15 @@ function Zeichnungen() {
   return (
     <div>
       {imageDisplay.map((item, index) => (
-        <div key={index} className="relative flex flex-col items-center mb-8">
-          <div className="w-2/3 h-auto max-h-48 overflow-hidden relative z-10">
+        <div key={index} className="relative flex flex-col items-center">
+          <div className="w-2/3 h-auto max-h-48 ">
             <img
               src={item.garland}
               alt={`Garland ${index}`}
-              className="w-full mt-10"
+              className="w-full"
             />
           </div>
-          <div className="flex relative z-20">
+          <div className="flex relative mt-10">
             <div className="w-1/2 p-4">
               <img
                 src={item.image1.imageSrc}

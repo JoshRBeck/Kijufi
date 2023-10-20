@@ -23,9 +23,9 @@ function FilmUndFestival() {
             Bötzowstraße 1-5, 10407 Berlin
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="text-red-600 ml-2"
+              className="text-blue-600 ml-2"
             />
-          </p> 
+          </p>
         </div>
       </div>
       {/* Box for Festival */}
@@ -44,7 +44,7 @@ function FilmUndFestival() {
             Saarbrücker Str. 24, 10405 Berlin
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="text-blue-900 ml-2"
+              className="text-red-600 ml-2"
             />
           </p>
         </div>
