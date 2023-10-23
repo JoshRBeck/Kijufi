@@ -1,0 +1,105 @@
+/* custom-fonts.css */
+
+/* Halcyon Black Fonts */
+.halcyon-black {
+  font-family: "Halcyon Black", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-black-italic {
+  font-family: "Halcyon Black", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Bold Fonts */
+.halcyon-bold {
+  font-family: "Halcyon Bold", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-bold-italic {
+  font-family: "Halcyon Bold", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Hairline Fonts */
+.halcyon-hairline {
+  font-family: "Halcyon Hairline", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-hairline-italic {
+  font-family: "Halcyon Hairline", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Light Fonts */
+.halcyon-light {
+  font-family: "Halcyon Light", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-light-italic {
+  font-family: "Halcyon Light", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Medium Fonts */
+.halcyon-medium {
+  font-family: "Halcyon Medium", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-medium-italic {
+  font-family: "Halcyon Medium", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Regular Fonts */
+.halcyon-regular {
+  font-family: "Halcyon Regular", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-regular-italic {
+  font-family: "Halcyon Regular", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Semibold Fonts */
+.halcyon-semibold {
+  font-family: "Halcyon Semibold", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-semibold-italic {
+  font-family: "Halcyon Semibold", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Thin Fonts */
+.halcyon-thin {
+  font-family: "Halcyon Thin", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.halcyon-thin-italic {
+  font-family: "Halcyon Thin", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
