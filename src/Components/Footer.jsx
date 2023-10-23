@@ -8,12 +8,12 @@ function Footer() {
 			<div className=" p-10 bg-[#E16848] bg-opacity-70 md:py-14">
 				<div className="block md:flex items-center justify-between">
 					<img src={das} alt="das zukunfts-paket" />
-					<p className="mt-5 md:text-[20px] md:px-24 m-auto">
+					<p className=" text-[#333C3A] mt-5 md:text-[20px] md:px-[200px] m-auto md:leading-[32px]">
 						Gemeinsam Grenzenlos – das Kinderrechte-Filmfestival 2023 ist ein Projekt des Landesverbands Kinder- und Jugendfilm Berlin e.V. (kijufi). Die Durchführung wird gefördert im Rahmen des Programms Das Zukunftspaket. Das Zukunftspaket für Bewegung, Kultur und Gesundheit ist ein Programm des Bundesministeriums für Familie, Senioren, Frauen und Jugend (BMFSFJ). Es wird umgesetzt von der Gesellschaft für soziale Unternehmensberatung (gsub) und der Stiftung SPI. Der Programmteil „Kinder- und
 						Jugendbeteiligung im Zukunftspaket“ wird verantwortet von der Deutschen Kinder- und Jugendstiftung (DKJS).
 					</p>
 				</div>
-				<div className="flex items-center gap-5">
+				<div className="flex items-center gap-5 md:mt-[40px]">
 					<p className="hidden md:block md:text-[28px]"> by</p>
 					<img className="hidden md:block md:mt-5" src={Kijufi} alt="Logo" />
 				</div>

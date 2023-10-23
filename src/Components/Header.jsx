@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Hamburger from '../Assets/hamburger.png';
 import Cross from '../Assets/cross.png';
+import Btn from './Btn';
 
 function Header() {
 	const [open, setOpen] = useState(true);
@@ -30,9 +31,7 @@ function Header() {
 						</li>
 						<li>
 							<NavLink>
-								<button type="button" className="bg-[#E16848] rounded-[10px] px-3 py-1 text-white">
-									Tickets
-								</button>
+								<Btn text={'Tickets'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
 							</NavLink>
 						</li>
 					</ul>
@@ -40,7 +39,7 @@ function Header() {
 				<div className=" block z-10 md:hidden" onClick={handleNav}>
 					{!open ? <img src={Cross} alt="" /> : <img src={Hamburger} alt="" />}
 				</div>
-				<div className={!open ? 'fixed m-auto right-0 top-0 w-screen h-full pb-10 border-r text-center border-r-gray-100 bg-[#E16848] transition-ease-in-out duration-200 ' : 'fixed transition-ease-in-out duration-200 right-[-100%] h-full top-0 '}>
+				<div className={!open ? 'fixed m-auto  w-[90%] h-[90%] text-center bg-[#E16848] transition-ease-in-out duration-200 ' : 'fixed transition-ease-in-out duration-200 right-[-100%] h-[90%] '}>
 					<ul className="uppercase mt-24">
 						<li onClick={handleNav} className={location.pathname === '/' ? 'font-bold border-b-[1px] border-white mb-5' : 'border-b-[1px] border-white mb-5'}>
 							<Link to={'/'}>Homepage</Link>
