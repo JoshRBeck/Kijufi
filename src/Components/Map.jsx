@@ -1,10 +1,10 @@
 import React from "react";
-import Berlin from "../Assets/Berlin Map.png";
+import Berlin from "../Assets/smallermap.png";
 
 function Map() {
   return (
-    <div>
-      <img src={Berlin} alt="Cartography" className="w-full md:w-auto" />
+    <div className="flex justify-center">
+      <img src={Berlin} alt="Cartography" className="w-90% md:w-auto" />
     </div>
   );
 }
