@@ -15,7 +15,7 @@ function Header() {
 		<div>
 			<nav className="block  md:p-[50px] ">
 				<div className="flex items-center justify-between bg-white w-full fixed top-0 p-[10px] md:relative m-auto">
-					<div className="pt-5">
+					<div className="pt-5 md:pt-0">
 						<h1 className="md:text-[40px] text-[20px] font-bold text-[#E16848] drop-shadow-lg">Gemeinsam Grenzenlos</h1>
 						<p className="font-bold text-xl  text-[13px] ">Das Kinderrechte-Filmfestival 2023</p>
 					</div>
