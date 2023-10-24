@@ -27,7 +27,7 @@ function HomeSwiper() {
 				{SliderImgs.map((element, index) => (
 					<SwiperSlide className=" py-7 md:py-16 md:px-3" key={index}>
 						<Link to={element.link}>
-							<img src={element.image} alt={element.alt} />
+							<img className="max-w-full" src={element.image} alt={element.alt} />
 						</Link>
 					</SwiperSlide>
 				))}

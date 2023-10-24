@@ -110,6 +110,10 @@
 :root {
   font-family: "Halcyon", sans-serif;
 }
+img,
+video {
+	max-width: fit-content;
+}
 
 .swiper-wrapper {
   display: flex;

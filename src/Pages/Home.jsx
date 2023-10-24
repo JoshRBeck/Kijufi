@@ -6,6 +6,7 @@ import HomeFreiheit from '../Components/HomeFreiheit';
 import HomeFestival from '../Components/HomeFestival';
 import HomeSwiper from '../Components/HomeSwiper';
 import Countdown from '../Components/Countdown';
+import HomeGarland from '../Components/HomeGarland';
 
 function Home() {
 	return (
@@ -14,7 +15,7 @@ function Home() {
 			<Countdown />
 			<HomeInfos />
 			<HomeFantasie />
-
+			<HomeGarland />
 			<HomeFreiheit />
 			<HomeFestival />
 			<HomeSwiper />
