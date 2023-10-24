@@ -8,7 +8,7 @@ import garland4 from "../Assets/garland-4.png"
 function Schedule() {
   const schedule = [
     {
-      day: "FR. 8.12",
+      day: "FR, 8.12",
       garland: garland4,
       poster: {
         imageSrc: position3,
@@ -17,27 +17,27 @@ function Schedule() {
       },
       events: [
         {
-          Startzeit: "🕘 10.00",
-          Filmvorführungen: "🎬 Kurzfilm-Programm für Schulklasse",
+          Startzeit: "🕘10.00",
+          Filmvorführungen: "🎬Kurzfilm-Programm für Schulklasse",
           Festival: "",
           Standort: "📍Filmtheater am Friedrichshain, Saal 1",
         },
         {
-          Startzeit: "🕘 16.00",
+          Startzeit: "🕘16.00",
           Filmvorführungen: "🎬Festivaleröffnung",
           Festival: "",
           Standort: "📍Filmtheater am Friedrichshain, Saal 1",
         },
         {
-          Startzeit: "🕘 19.00",
+          Startzeit: "🕘19.00",
           Filmvorführungen: "",
-          Festival: "🥳 Festival-Party (Nur mit einladung)",
+          Festival: "🥳Festival-Party (Nur mit einladung)",
           Standort: "📍Jugendkulturzentrum Königstadt",
         },
       ],
     },
     {
-      day: "SA. 9.12",
+      day: "SA, 9.12",
       garland: garland1,
       poster: {
         imageSrc: position4,
@@ -46,38 +46,38 @@ function Schedule() {
       },
       events: [
         {
-          Startzeit: "🕘 11.00",
-          Filmvorführungen: "🎬 Kurzfilmprogramm 1",
-          Standort: "📍 Filmtheater am Friedrichshain, Saal 1",
+          Startzeit: "🕘11.00",
+          Filmvorführungen: "🎬Kurzfilmprogramm 1",
+          Standort: "📍Filmtheater am Friedrichshain, Saal 1",
         },
         {
-          Startzeit: "🕘 13.00",
+          Startzeit: "🕘13.00",
           Filmvorführungen: "",
           Festival: "🥳 Filmmakers Lunch / Meet & Greet",
           Standort: "📍Jugendkulturzentrum Königstadt",
         },
         {
-          Startzeit: "🕘 15.30",
-          Filmvorführungen: "🎬 Kurzfilmprogramm 1",
+          Startzeit: "🕘15.30",
+          Filmvorführungen: "🎬Kurzfilmprogramm 1",
           Festival: "",
           Standort: "📍Filmtheater am Friedrichshain, Saal 1",
         },
         {
-          Startzeit: "🕘 17.30",
+          Startzeit: "🕘17.30",
           Filmvorführungen: "",
           Festival: "🥳Talk + Filmmakers Dinner",
           Standort: "📍Jugendkulturzentrum Königstadt",
         },
         {
-          Startzeit: "🕘 19.30",
-          Filmvorführungen: " 🎬 Kinderrechte-Überraschungsfilm 1",
+          Startzeit: "🕘19.30",
+          Filmvorführungen: " 🎬Kinderrechte-Überraschungsfilm 1",
           Festival: "",
           Standort: "📍Jugendkulturzentrum Königstadt",
         },
       ],
     },
     {
-      day: "SO. 10.12",
+      day: "SO, 10.12",
       garland: garland4,
       poster: {
         imageSrc: position6,
@@ -86,7 +86,7 @@ function Schedule() {
       },
       events: [
         {
-          Startzeit: "🕘 11.00",
+          Startzeit: "🕘11.00",
           Filmvorführungen:
             "🎬Publikumsfavoriten + Kinderrechte-Überraschungsfilm 2",
           Festival: "",
@@ -108,7 +108,15 @@ function Schedule() {
           </div>
           <div className={`w-full flex flex-col md:flex-row justify-center items-center ${dayIndex === 1 ? 'md:flex-row-reverse' : ''}`}>
             <div className="w-full md:w-1/2 p-5 flex-col justify-center items-center">
-              <h2 className="text-3xl font-HalcyonBlack text-[#323A64] text-shadow-md drop-shadow-[0_4px_4px_rgba(255,255,255,1)]">{dayInfo.day}</h2>
+              <h2 className="text-[30px] md:text-[60px] font-bold relative pl-2">
+                <span className="text-[#323A64] drop-shadow-md">{dayInfo.day}</span>
+                <span className="absolute -inset-4 -z-10 text-white">
+                  {dayInfo.day}
+                </span>
+                <span className="absolute left-1 top-0.5 text-outline text-white pl-2">
+                  {dayInfo.day}
+                </span>
+              </h2>
               <ul className="text-justify">
                 {dayInfo.events
                   .filter((event) => (
@@ -116,13 +124,20 @@ function Schedule() {
                   ))
                   .map((event, eventIndex) => (
                     <li key={eventIndex} className="p-5 sm:p-2">
-                      {event.Startzeit && <div className="font-HalcyonMedium text-2xl">{event.Startzeit}</div>}
-                      {event.Filmvorführungen && <div className="font-HalcyonMedium text-2xl tracking-normal break-all">{event.Filmvorführungen}</div>}
-                      {event.Festival && <div className="font-HalcyonBlack text-2xl tracking-normal break-all">{event.Festival}</div>}
-                      {event.Standort && <div className="font-HalcyonMedium text-2xl tracking-normal break-all">{event.Standort}</div>}
+                      {event.Startzeit && <div className="font-HalcyonMedium text-[16px] md:text-[25px]">{event.Startzeit}</div>}
+                      {event.Filmvorführungen && <div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Filmvorführungen}</div>}
+                      {event.Festival && <div className="font-HalcyonBlack text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Festival}</div>}
+                      {event.Standort && <div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Standort}</div>}
                     </li>
                   ))}
               </ul>
+              <button
+                type="button"
+                className="hidden md:inline bg-gray-200 font-HalcyonBlack rounded-xl text-[25px] py-2 px-4 mt-2 drop-shadow-[8px_5px_0_rgb(84,97,144)] mx-auto"
+              >
+                {dayInfo.poster.buttonText}
+              </button>
+
             </div>
             <div className="w-full md:w-1/2 hidden md:flex flex-col items-center justify-around">
               <div style={{ maxWidth: '80%', height: 'auto', margin: '0 auto' }}>
@@ -136,11 +151,7 @@ function Schedule() {
                   }}
                 />
               </div>
-              <button type="button" className="bg-gray-200 font-HalcyonBlack rounded-full text-2xl py-2 px-4 mt-2 shadow-md mx-auto">
-                {dayInfo.poster.buttonText}
-              </button>
             </div>
-
           </div>
         </div>
       ))}

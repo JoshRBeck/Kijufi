@@ -1,10 +1,10 @@
-import action from '../Assets/action.png';
+import gif3 from "../Assets/3.gif"
 import Btn from './Btn';
 function HomeFestival() {
 	return (
 		<section className="flex flex-col items-center text-center gap-5 bg-[#D5E7E3] py-[55px] md:flex-row md:justify-between md:text-left md:px-[100px]  md:gap-0">
 			<div>
-				<img className="h-64 md:h-full" src={action} alt="action-img" />
+				<img className="h-64 md:h-full" src={gif3} alt="action-img" />
 			</div>
 			<div className="md:w-[1300px] md:pr-[50px]">
 				<h3 className="text-[25px] font-semibold md:text-[40px]">Werde Teil der Festival-Crew</h3>

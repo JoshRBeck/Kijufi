@@ -1,6 +1,15 @@
 import React from "react";
+import bg1 from "../Assets/vector-17.png"
+import bg2 from "../Assets/vector15.png";
+import bg3 from "../Assets/vector-16.png";
+import bg4 from "../Assets/vector12.png";
+import bg5 from "../Assets/vector13.png";
+import bg6 from "../Assets/vector14.png";
 
 function DatenschutzData() {
+
+  const backgrounds = [bg1, bg2, bg3, bg4, bg5, bg6];
+
   const datenschutzData = [
     {
       title: "Datenschutzerklärung",
@@ -21,7 +30,7 @@ function DatenschutzData() {
           2053 Berlin
           Telefon: 030 60 98 86 55
           E-Mail: info@kijufi.de
-          Unseren Datenschutzbeauftragten erreichen Sie unter datenschutz@kijufi.de oder unter unserer Postadresse mit dem Zusatz „Datenschutzbeauftragter“.`,
+          Unseren Datenschutzbeauftragten erreichen Sie unter datenschutz@kijufi.de  oder unter unserer Postadresse mit dem Zusatz „Datenschutzbeauftragter“.`,
         },
       ],
     },
@@ -30,7 +39,7 @@ function DatenschutzData() {
       content: [
         {
           type: "paragraph",
-          text: "Die Website www.kijufi.de wird gehostet von jugendnetz-berlin.de. Um den Schutz Ihrer Daten zu gewährleisten, haben wir mit jugendnetz-berlin.de einen Vertrag zur Auftragsverarbeitung nach §28 DSGVO abgeschlossen. Ihre Daten, gegebenenfalls auch personenbezogene Daten, können auf den Servern von jugendnetz-berlin.de gespeichert werden.",
+          text: "Die Website www.kijufi.de  wird gehostet von jugendnetz-berlin.de. Um den Schutz Ihrer Daten zu gewährleisten, haben wir mit jugendnetz-berlin.de einen Vertrag zur Auftragsverarbeitung nach §28 DSGVO abgeschlossen. Ihre Daten, gegebenenfalls auch personenbezogene Daten, können auf den Servern von jugendnetz-berlin.de gespeichert werden.",
         },
         {
           type: "paragraph",
@@ -51,11 +60,11 @@ function DatenschutzData() {
         },
         {
           type: "paragraph",
-          text: "Durch die Nutzung dieser Website erklären Sie sich mit der Speicherung, Aufbewahrung und Verwendung dieser Daten durch jugendnetz-berlin.de entsprechend der Datenschutzerklärung von jugendnetz-berlin.de einverstanden. Die Datenschutzerklärung von jugendnetz-berlin.de finden Sie [hier](http://www.jugendnetz-berlin.de/de/datenschutzerklaerung/).",
+          text: "Durch die Nutzung dieser Website erklären Sie sich mit der Speicherung, Aufbewahrung und Verwendung dieser Daten durch jugendnetz-berlin.de entsprechend der Datenschutzerklärung von jugendnetz-berlin.de einverstanden. Die Datenschutzerklärung von jugendnetz-berlin.de finden Sie hier http://www.jugendnetz-berlin.de/de/datenschutzerklaerung/.",
         },
         {
           type: "paragraph",
-          text: "Als Content-Management-System, über das wir die Website www.kijufi.de verwalten, nutzen wir das Open-Source-Programm WordPress. Auf den Servern von WordPress werden keine Daten gespeichert, da die Website www.kijufi.de von jugendnetz-berlin.de gehostet wird.",
+          text: "Als Content-Management-System, über das wir die Website www.kijufi.de  verwalten, nutzen wir das Open-Source-Programm WordPress. Auf den Servern von WordPress werden keine Daten gespeichert, da die Website www.kijufi.de  von jugendnetz-berlin.de gehostet wird.",
         },
       ],
     },
@@ -85,7 +94,7 @@ function DatenschutzData() {
         },
         {
           type: "paragraph",
-          text: "Näheres entnehmen Sie den Datenschutzbestimmungen von CentralStationCRM unter: [https://centralstationcrm.net/www/privacy](https://centralstationcrm.net/www/privacy). Wir haben mit CentralStationCRM einen Vertrag abgeschlossen, in dem wir CentralStationCRM verpflichten, die Daten unserer Kunden zu schützen und sie nicht an Dritte weiterzugeben. Dieser Vertrag kann unter folgendem Link eingesehen werden: [https://centralstationcrm.de/avv](https://centralstationcrm.de/avv).",
+          text: "Näheres entnehmen Sie den Datenschutzbestimmungen von CentralStationCRM unter: https://centralstationcrm.net/www/privacy . Wir haben mit CentralStationCRM einen Vertrag abgeschlossen, in dem wir CentralStationCRM verpflichten, die Daten unserer Kunden zu schützen und sie nicht an Dritte weiterzugeben. Dieser Vertrag kann unter folgendem Link eingesehen werden: https://centralstationcrm.de/avv .",
         },
       ],
     },
@@ -106,7 +115,7 @@ function DatenschutzData() {
         },
         {
           type: "paragraph",
-          text: "Weitere Informationen zu Google reCAPTCHA sowie die Datenschutzerklärung von Google entnehmen Sie folgenden Links: [https://www.google.com/intl/de/policies/privacy/](https://www.google.com/intl/de/policies/privacy/) und [https://www.google.com/recaptcha/intro/android.html](https://www.google.com/recaptcha/intro/android.html).",
+          text: "Weitere Informationen zu Google reCAPTCHA sowie die Datenschutzerklärung von Google entnehmen Sie folgenden Links: https://www.google.com/intl/de/policies/privacy/  und https://www.google.com/recaptcha/intro/android.html.",
         },
       ],
     },
@@ -135,7 +144,7 @@ function DatenschutzData() {
       content: [
         {
           type: "paragraph",
-          text: "KIJUFI gibt Ihre personenbezogenen Daten grundsätzlich nicht an Dritte weiter, es sei denn, Sie haben vorher Ihre ausdrückliche Einwilligung erklärt oder es besteht eine gesetzliche Verpflichtung zur Datenweitergabe. Soweit Sie Ihre Einwilligung erteilt haben, können Sie sie jederzeit mit Wirkung für die Zukunft durch einfache Mitteilung per E-Mail an die Adresse datenschutz@kijufi.de widerrufen.",
+          text: "KIJUFI gibt Ihre personenbezogenen Daten grundsätzlich nicht an Dritte weiter, es sei denn, Sie haben vorher Ihre ausdrückliche Einwilligung erklärt oder es besteht eine gesetzliche Verpflichtung zur Datenweitergabe. Soweit Sie Ihre Einwilligung erteilt haben, können Sie sie jederzeit mit Wirkung für die Zukunft durch einfache Mitteilung per E-Mail an die Adresse datenschutz@kijufi.de  widerrufen.",
         },
         {
           type: "paragraph",
@@ -190,47 +199,145 @@ function DatenschutzData() {
           text: "Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:",
         },
         {
-          type: "list",
-          style: "unordered",
-          items: [
-            "Allgemeine Rechte",
-            "Rechte bei der Datenverarbeitung nach dem berechtigten Interesse",
-            "Rechte bei Direktwerbung",
-            "Recht auf Beschwerde bei einer Aufsichtsbehörde",
-          ],
+          type: "paragraph",
+          text: "Allgemeine Rechte",
         },
         {
           type: "paragraph",
-          text: "Sie haben zudem das Recht, sich bei einer zuständigen Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Bei Fragen rund um das Thema Datenschutz und die Verarbeitung Ihrer personenbezogenen Daten, wenden Sie sich an unsere Datenschutzbeauftragte (Kontakt siehe oben). Diese steht Ihnen auch gerne bei Anträgen, Auskunftsersuchen, Anregungen oder Beschwerden zur Verfügung. Stand Januar 2019",
+          text: "Sie haben ein Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen die Verarbeitung und auf Datenübertragbarkeit. Soweit eine Verarbeitung auf Ihrer Einwilligung beruht, haben Sie das Recht, diese uns gegenüber mit Wirkung für die Zukunft zu widerrufen.",
+        },
+        {
+          type: "paragraph",
+          text: "Rechte bei der Datenverarbeitung nach dem berechtigten Interesse",
+        },
+        {
+          type: "paragraph",
+          text: "Sie haben gem. Art. 21 Abs.1 DSGVO das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs.1 e DSGVO (Datenverarbeitung im öffentlichen Interesse) oder aufgrund Artikel 6 Abs.1 f DSGVO (Datenverarbeitung zur Wahrung eines berechtigten Interesses) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Vorschrift gestütztes Profiling. Im Falle Ihres Widerspruchs verarbeiten wir Ihre personenbezogenen Daten nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
+        },
+        {
+          type: "paragraph",
+          text: "Rechte bei Direktwerbung",
+        },
+        {
+          type: "paragraph",
+          text: "Sofern wir Ihre personenbezogenen Daten verarbeiten, um Direktwerbung zu betreiben, so haben Sie gem. Art. 21 Abs. 2 DSGVO das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen, dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Im Falle Ihres Widerspruchs gegen die Verarbeitung zum Zwecke der Direktwerbung werden wir Ihre personenbezogenen Daten nicht mehr für diese Zwecke verarbeiten.",
+        },
+        {
+          type: "paragraph",
+          text: "Recht auf Beschwerde bei einer Aufsichtsbehörde",
+        },
+        {
+          type: "paragraph",
+          text: "Sie haben zudem das Recht, sich bei einer zuständigen Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Bei Fragen rund um das Thema Datenschutz und die Verarbeitung Ihrer personenbezogenen Daten, wenden Sie sich an unsere Datenschutzbeauftragte (Kontakt siehe oben). Diese steht Ihnen auch gerne bei Anträgen, Auskunftsersuchen, Anregungen oder Beschwerden zur Verfügung.",
+        },
+        {
+          type: "paragraph",
+          text: "Stand Januar 2019",
         },
       ],
     },
   ];
   return (
-    <div className="p-4">
+    <div>
       {datenschutzData.map((section, index) => (
-        <div key={index}>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center p-4">{section.title}</h2>
+        <div
+          key={index}
+          style={{
+            backgroundImage: `url(${backgrounds[index % 6]})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% auto',
+            backgroundPosition: 'center top',
+          }}
+          className="p-4"
+        >
+          <h2 className={index === 0 ? 'text-[50px] font-bold text-left p-4' : 'text-[25px] font-bold text-left p-4'}>
+            {section.title}
+          </h2>
           <div className="p-2">
             {section.content.map((item, itemIndex) => (
               <div key={itemIndex}>
                 {item.type === "paragraph" && (
-                  <p className="text-base sm:text-lg p-2">{item.text}</p>
+                  <p className="text-base text-[25px] p-2">
+                    {item.text.split(" ").map((word, wordIndex) => {
+                      if (word.startsWith("http") || word.startsWith("www.") || word.includes("@")) {
+                        if (word.startsWith("www.")) {
+                          return (
+                            <a
+                              key={wordIndex}
+                              href={`http://${word}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline text-[#EA5B35] hover:text-[#EA5B35]"
+                            >
+                              {word}
+                            </a>
+                          );
+                        } else {
+                          return (
+                            <a
+                              key={wordIndex}
+                              href={word}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline text-[#EA5B35] hover:text-[#EA5B35]"
+                            >
+                              {word}
+                            </a>
+                          );
+                        }
+                      } else {
+                        return word + " ";
+                      }
+                    })}
+                  </p>
                 )}
                 {item.type === "unorderedList" && (
-                  <ul className="list-disc pl-6 p-2">
+                  <ul className="list-disc ml-16">
                     {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className="text-base p-2">
+                      <li key={listItemIndex} className="text-base">
                         {listItem}
                       </li>
                     ))}
                   </ul>
                 )}
                 {item.type === "list" && (
-                  <ul className="list-decimal pl-6 p-2">
-                    {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className="text-base p-2">
-                        {listItem}
+                  <ul className="p-2">
+                    {item.items && item.items.map((listItem, listItemIndex) => (
+                      <li key={listItemIndex} className="text-base">
+                        {typeof listItem === 'string' ? (
+                          listItem.split(" ").map((word, wordIndex) => {
+                            if (word.startsWith("http") || word.startsWith("www.") || word.includes("@")) {
+                              if (word.startsWith("www.")) {
+                                return (
+                                  <a
+                                    key={wordIndex}
+                                    href={`http://${word}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline text-[#EA5B35] hover:text-[#EA5B35]"
+                                  >
+                                    {word}
+                                  </a>
+                                );
+                              } else {
+                                return (
+                                  <a
+                                    key={wordIndex}
+                                    href={word}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline text-[#EA5B35] hover:text-[#EA5B35]"
+                                  >
+                                    {word}
+                                  </a>
+                                );
+                              }
+                            } else {
+                              return word + " ";
+                            }
+                          })
+                        ) : listItem
+                        }
                       </li>
                     ))}
                   </ul>
