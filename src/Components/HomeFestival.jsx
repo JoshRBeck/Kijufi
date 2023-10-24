@@ -1,4 +1,4 @@
-import gif3 from "../Assets/3.gif"
+import gif3 from '../Assets/3.gif';
 import Btn from './Btn';
 function HomeFestival() {
 	return (
@@ -12,7 +12,7 @@ function HomeFestival() {
 				<p className="text-[18px] font-semibold mt-[40px] md:text-[25px]">Du willst mitmachen? Melde Dich bei uns und komm' vorbei!</p>
 
 				<div className="mt-[40px]">
-					<Btn text={'Info Festival-Crew'} backgroundColor="bg-white" hoverColor="hover:bg-[#5BA092]" />
+					<Btn text={'Info Festival-Crew'} backgroundColor="bg-white" hoverColor="hover:bg-[#5BA092]" padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]" />
 				</div>
 			</div>
 		</section>
