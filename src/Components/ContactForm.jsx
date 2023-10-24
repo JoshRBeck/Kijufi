@@ -36,6 +36,8 @@ const KontaktForm = () => {
     nachricht: "",
   });
 
+  const [status, setStatus] = useState("Submit");
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -43,10 +45,14 @@ const KontaktForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/send-email", {
-      method: "POST",
+    setStatus("Sending...");
+    const response = await fetch('http://localhost:3001/api/send-email', {
+      method: 'POST',
       body: JSON.stringify(formData),
     });
+
+    setStatus("Submit");
+
     if (response.ok) {
       console.log("Email Sent Successfully!");
     } else {
