@@ -42,13 +42,13 @@ function Header() {
 				</div>
 				<div className={!open ? 'fixed top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] m-auto rounded-[20px] w-[94vw] h-[85vh] text-center bg-[#E16848] transition-ease-in-out duration-200 ' : 'fixed top-[55%]  transition-ease-in-out duration-200 right-[-100%] h-[90%] '}>
 					<ul className="uppercase flex flex-col justify-center gap-8 mt-8 items-center text-white">
-						<li onClick={handleNav} className={location.pathname === '/' ? ' text-[19px] border-b-[1px] px-5 border-white' : 'border-b-[1px] px-5 border-white '}>
+						<li onClick={handleNav} className={location.pathname === '/' ? ' font-bold border-b-[1px] px-5 border-white' : 'border-b-[1px] px-5 border-white '}>
 							<Link to={'/'}>Homepage</Link>
 						</li>
-						<li onClick={handleNav} className={location.pathname === '/program' ? ' text-[19px] border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white'}>
+						<li onClick={handleNav} className={location.pathname === '/program' ? ' font-bold border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white'}>
 							<NavLink to={'program'}>Programm</NavLink>
 						</li>
-						<li onClick={handleNav} className={location.pathname === '/contact' ? ' text-[19px] border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white '}>
+						<li onClick={handleNav} className={location.pathname === '/contact' ? ' font-bold border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white '}>
 							<NavLink to={'contact'}>Kontakt & Infos</NavLink>
 						</li>
 						<li className="">
