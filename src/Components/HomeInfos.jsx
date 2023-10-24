@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Btn from './Btn';
 function HomeInfos() {
 	return (
@@ -11,7 +11,9 @@ function HomeInfos() {
 			</p>
 			<p className="text-[30px] font-bold mt-6 ">⚠️ Achtung! Der Ticketverkauf startet Anfang November 2023</p>
 
-			<Btn text={'Programm'} backgroundColor="bg-white" hoverColor="hover:bg-[#5BA092]" />
+			<Link to={'program'}>
+				<Btn text={'Programm'} backgroundColor="bg-white" hoverColor="hover:bg-[#5BA092]" />
+			</Link>
 		</section>
 	);
 }

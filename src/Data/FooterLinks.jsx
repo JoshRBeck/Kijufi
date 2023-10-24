@@ -36,7 +36,7 @@ export const FooterNavLinks = [
 		text: 'Impressum',
 	},
 	{
-		link: '/',
+		link: 'datenschutz',
 		text: 'Datenschutz',
 	},
 ];

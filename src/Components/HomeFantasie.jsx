@@ -2,7 +2,7 @@ import cookList from '../Assets/cooking-list.png';
 
 function HomeFantasie() {
 	return (
-		<section className="flex items-center justify-center md:gap-10 pt-5 md:h-[500px] md:m-auto">
+		<section className="flex items-center justify-center md:gap-28 pt-5 md:h-[400px] md:m-auto">
 			<div>
 				<img className="h-[200px] md:h-full" src={cookList} alt="cooking-list" />
 			</div>
