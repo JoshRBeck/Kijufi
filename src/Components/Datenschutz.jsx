@@ -1,6 +1,15 @@
 import React from "react";
+import bg1 from "../Assets/vector-17.png"
+import bg2 from "../Assets/vector15.png";
+import bg3 from "../Assets/vector-16.png";
+import bg4 from "../Assets/vector12.png";
+import bg5 from "../Assets/vector13.png";
+import bg6 from "../Assets/vector14.png";
 
 function DatenschutzData() {
+
+  const backgrounds = [bg1, bg2, bg3, bg4, bg5, bg6];
+
   const datenschutzData = [
     {
       title: "Datenschutzerklärung",
@@ -229,14 +238,21 @@ function DatenschutzData() {
     },
   ];
   return (
-    <div className="p-4">
+    <div>
       {datenschutzData.map((section, index) => (
-        <div key={index}>
-          {index === 0 ? (
-            <h2 className="text-[50px] font-bold text-left p-4">{section.title}</h2>
-          ) : (
-            <h2 className="text-[25px] font-bold text-left p-4">{section.title}</h2>
-          )}
+        <div
+          key={index}
+          style={{
+            backgroundImage: `url(${backgrounds[index % 6]})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% auto',
+            backgroundPosition: 'center top',
+          }}
+          className="p-4"
+        >
+          <h2 className={index === 0 ? 'text-[50px] font-bold text-left p-4' : 'text-[25px] font-bold text-left p-4'}>
+            {section.title}
+          </h2>
           <div className="p-2">
             {section.content.map((item, itemIndex) => (
               <div key={itemIndex}>
