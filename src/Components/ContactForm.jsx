@@ -47,7 +47,9 @@ const KontaktForm = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    const response = await fetch('http://localhost:5173/submit-form-please', {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
+    const response = await fetch(`${backendUrl}/submit-form-please`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -79,6 +81,7 @@ const KontaktForm = () => {
               placeholder="Dein Name"
               value={formData.name}
               onChange={handleInputChange}
+              style={{ color: 'black' }}
               className="inputField rounded-s w-full text-[#D5E7E3] p-1"
             />
           </div>
@@ -91,6 +94,7 @@ const KontaktForm = () => {
               placeholder="Deine Email Addresse"
               value={formData.email}
               onChange={handleInputChange}
+              style={{ color: 'black' }}
               className="inputField rounded-s w-full text-[#D5E7E3] p-1"
             />
           </div>
@@ -102,6 +106,7 @@ const KontaktForm = () => {
               placeholder="Betreff"
               value={formData.betreff}
               onChange={handleInputChange}
+              style={{ color: 'black' }}
               className="textAreaField rounded-s w-full text-[#D5E7E3] p-1"
             />
           </div>
@@ -113,6 +118,7 @@ const KontaktForm = () => {
               placeholder="Nachricht"
               value={formData.nachricht}
               onChange={handleInputChange}
+              style={{ color: 'black' }}
               className="textAreaField rounded-s w-full text-[#D5E7E3] p-1"
             />
           </div>
