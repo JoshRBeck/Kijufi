@@ -17,11 +17,11 @@ function ImpressumPage() {
           Max Neu <br /> Ralf Schlotter <br /> Claudia Ziegenfuß
         </p>
         <h3 className="font-bold text-[25px]">UX/UI Designer der Website: </h3>
-        <p className="text-[25px] mb-10">Clémence Le Carre - Linkedin-Profil</p>
+        <p className="text-[25px] mb-10">Clémence Le Carre - <a href="https://www.linkedin.com/in/cl%C3%A9mence-le-carre-ux-design/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'> https://www.linkedin.com/in/cl%C3%A9mence-le-carre-ux-design/</a><br /> </p>
         <h3 className="font-bold text-[25px]">Webentwickler der Website: </h3>
         <p className="text-[25px] mb-10">
           Josh Beck - <a href="https://www.linkedin.com/in/beckrobertjosh/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'> https://www.linkedin.com/in/beckrobertjosh/ </a><br />
-          Lukas Jülich - Linkedin-Profil <br /> Alexandre Maunoury - Linkedin Profil
+          Lukas Jülich - <a href="https://www.linkedin.com/in/lukas-j%C3%BClich-062583243/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'> https://www.linkedin.com/in/lukas-j%C3%BClich-062583243/</a><br />
         </p>
         <p className="text-[25px] mb-10">
           Ihr erreicht den Landesverband Kinder- & Jugendfilm Berlin e. V. postalisch unter der o. g Adresse, per Mail an <span className="font-bold"> info@kijufi.de </span> oder telefonisch unter <span className="font-bold"> +49 (0) 30 609 51 369</span>
