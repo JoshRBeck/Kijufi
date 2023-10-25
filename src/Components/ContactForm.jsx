@@ -46,17 +46,21 @@ const KontaktForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    const response = await fetch('http://localhost:3001/api/send-email', {
+
+    const response = await fetch('http://localhost:5173/submit-form-please', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(formData),
     });
 
     setStatus("Submit");
 
     if (response.ok) {
-      console.log("Email Sent Successfully!");
+      console.log("Form data submitted successfully!");
     } else {
-      console.log("Email sending failed");
+      console.log("Form data submission failed");
     }
   };
 
@@ -119,7 +123,7 @@ const KontaktForm = () => {
       </div>
 
       {/* Container for Contact Information */}
-      <div className="w-1/2 h-full bg-[#E2EFEC] p-[75px] flex flex-col hidden md:inline">
+      <div className="w-1/2 h-full bg-[#E2EFEC] p-[75px] hidden md:inline">
         <img src={KijufiBlack} alt="" />
         <p className="text-base text-[13.44px] mt-2">Landesverband Kinder- und Jugendfilm Berlin e.V. (kijufi)</p>
         <p className="text-base text-[13.44px]">Am Sudhaus 21</p>
