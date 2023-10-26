@@ -5,20 +5,21 @@ import TeilFestival from '../Components/TeilFestival';
 import Platzhalter from '../Components/Platzhalter';
 
 function Program() {
-	return <div><div>
-		<div className="p-10 flex justify-center align-middle items-center flex-col">
-			<h1 className="font-semibold text-[#323A64] text-center p-10 text-[20px] md:text-[50px] halcyon-thin">
-				Unser Programm für Filmemacher
-			</h1>
-			<p className="flex justify-center items-center text-[11.3px] md:text-[25px] bg-[#F1F7F6] w-fit text-center rounded-full">
-				🕘 : Startzeit 🎬 : Filmvorführungen 🥳 : Festival 📍 : Standort
-			</p>
+	return (
+		<div>
+			<div className="pt-32 pl-5">
+				<h1 className=" font-semibold text-[#323A64]  text-[20px]  halcyon-thin md:text-[50px]">Unser Programm für</h1>
+				<p className=" w-fit p-2 mt-2 text-[11px] text-[#333C3A] md:text-[25px] bg-[#F1F7F6] rounded-[9px]">
+					🕘 : Startzeit 🎬 : Filmvorführungen 🥳
+					<br /> : Festival 📍 : Standort
+				</p>
+			</div>
+			<Schedule />
+			<FestivalRahmen />
+			<TeilFestival />
+			{/* <Platzhalter /> */}
 		</div>
-		<Schedule />
-		<FestivalRahmen />
-		<TeilFestival />
-		<Platzhalter />
-	</div></div>;
+	);
 }
 
 export default Program;
