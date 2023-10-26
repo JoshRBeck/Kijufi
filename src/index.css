@@ -132,3 +132,10 @@ video {
 	font-weight: bold;
 	text-shadow: 2px 2px 0 #fff, 2.7px 2.7px 0 #000;
 }
+
+.text-shadow-rahmen {
+	color: #333c3a;
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 2px 2px 0 #fff, 2.7px 2.7px 0 #000;
+}
