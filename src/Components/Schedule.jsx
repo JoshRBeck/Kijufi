@@ -104,7 +104,7 @@ function Schedule() {
 					<div>
 						<img src={dayInfo.garland} alt={`Garland for ${dayInfo.day}`} className="w-full md:min-w-full" />
 					</div>
-					<div className={`md:my-5 md:max-w-[1500px] md:m-auto md:flex justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse md:text-left gap-[550px]' : ''}`}>
+					<div className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse md:text-left gap-[550px]' : ''}`}>
 						<div className="w-full">
 							<h2 className="text-shadow md:text-[60px]">{dayInfo.day}</h2>
 							<ul>
@@ -119,9 +119,6 @@ function Schedule() {
 										</li>
 									))}
 							</ul>
-							<a href="https://wolke.kijufi.org/s/MqCYG2t6CaTAwom" download="platzhalter-flyer-2.pdf" rel="noopener noreferrer" target="_blank">
-								<Btn text={'In anderem Fenster öffnen'} backgroundColor="bg-[#ECEEF5] " hoverColor="hover:bg-[#979FBD] hover:text-white" padding="py-[10px] px-[20px] md:py-[11px] md:px-[35px]" fontSize="md:text-[25px] text-black" />
-							</a>
 						</div>
 						<div className=" hidden md:block ">
 							<div>
