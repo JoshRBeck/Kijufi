@@ -22,11 +22,12 @@ const transporter = createTransport({
   },
 });
 
-const port = process.env.PORT || 5173; 
+console.log('mailUser:', mailUser);
+console.log('mailPass:', mailPass);
+const port = process.env.PORT || 5173;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
 
 app.post('/api/submit', (req, res) => {
   console.log('Received request at:', req.originalUrl);
