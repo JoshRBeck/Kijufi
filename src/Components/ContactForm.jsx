@@ -49,7 +49,7 @@ const KontaktForm = () => {
 
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
-    const response = await fetch(`${backendUrl}/submit-form-please`, {
+    const response = await fetch(`${backendUrl}/submit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
