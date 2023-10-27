@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Hamburger from '../Assets/hamburger.png';
 import Cross from '../Assets/cross.png';
 import { MenuLinKs } from '../Data/MenuLinks';
@@ -25,15 +25,15 @@ function Header() {
 							<Link to={'/'}>Homepage</Link>
 						</li>
 						<li className={location.pathname === '/program' ? 'font-bold' : ''}>
-							<NavLink to={'program'}>Programm</NavLink>
+							<Link to={'/program'}>Programm</Link>
 						</li>
 						<li className={location.pathname === '/contact' ? 'font-bold' : ''}>
-							<NavLink to={'contact'}>Kontakt & Infos</NavLink>
+							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
 						<li>
-							<NavLink>
+							<Link>
 								<Btn text={'Tickets'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
-							</NavLink>
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -46,10 +46,10 @@ function Header() {
 							<Link to={'/'}>Homepage</Link>
 						</li>
 						<li onClick={handleNav} className={location.pathname === '/program' ? ' font-bold border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white'}>
-							<NavLink to={'program'}>Programm</NavLink>
+							<Link to={'program'}>Programm</Link>
 						</li>
 						<li onClick={handleNav} className={location.pathname === '/contact' ? ' font-bold border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white '}>
-							<NavLink to={'contact'}>Kontakt & Infos</NavLink>
+							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
 						<li className="">
 							<Link to={'program'}>

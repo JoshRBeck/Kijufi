@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,useLocation } from "react-router-dom";
 import Home from "./Pages/Home";
 import Program from "./Pages/Program";
 import Contact from "./Pages/Contact";
@@ -8,12 +8,19 @@ import Footer from "./Components/Footer";
 import Impressum from "./Pages/Impressum";
 import Zeichnungen from "./Components/ImagesDisplay";
 import Datenschutz from "./Pages/Datenschutz";
-
+import { useEffect,  } from "react"
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({top:0, left:0, behavior: "smooth"});
+  }, [location.pathname]);
   return (
     <>
+   
       <Header />
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="program" element={<Program />} />
@@ -24,6 +31,8 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
+     
+     
 
     </>
   );

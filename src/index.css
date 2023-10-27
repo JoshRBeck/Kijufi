@@ -110,6 +110,9 @@
 :root {
 	font-family: 'Halcyon', sans-serif;
 }
+body {
+	scroll-behavior: smooth;
+}
 img,
 video {
 	max-width: fit-content;
