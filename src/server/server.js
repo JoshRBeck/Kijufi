@@ -3,6 +3,8 @@ const cors = require('cors');
 const { createTransport } = require('nodemailer');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 const app = express();
 const corsOptions = {
   origin: ['http://localhost:3000', 'https://kijufi.vercel.app/contact'],
@@ -24,13 +26,14 @@ const transporter = createTransport({
 
 console.log('mailUser:', mailUser);
 console.log('mailPass:', mailPass);
-const port = process.env.PORT || 5173;
+const port = process.env.REACT_APP_PORT;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
 app.post('/api/submit', (req, res) => {
   console.log('Received request at:', req.originalUrl);
+  console.log('Received POST request at /api/submit');
   const { name, email, betreff, nachricht } = req.body;
 
   if (!name || !email || !betreff || !nachricht) {
@@ -39,7 +42,7 @@ app.post('/api/submit', (req, res) => {
 
   const mailOptions = {
     from: mailUser,
-    to: 'joshbeck17@gmail.com',
+    to: 'joshbeckdeveloper@gmail.com',
     subject: betreff,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${nachricht}`,
   };

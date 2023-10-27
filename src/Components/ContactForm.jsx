@@ -48,14 +48,18 @@ const KontaktForm = () => {
     setStatus("Sending...");
 
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    console.log('REACT_APP_BACKEND_URL:', process.env.REACT_APP_BACKEND_URL);
+    console.log('backendUrl:', backendUrl);
 
-    const response = await fetch(`${backendUrl}/api/submit`, {  // Add '/api/submit'
+    const response = await fetch(`${backendUrl}api/submit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     });
+
+    console.log('Form data submitted. Response:', response);
 
     setStatus("Submit");
 
