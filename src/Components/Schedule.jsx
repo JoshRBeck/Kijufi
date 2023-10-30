@@ -112,10 +112,10 @@ function Schedule() {
 									.filter((event) => event.Startzeit || event.Filmvorführungen || event.Festival || event.Standort)
 									.map((event, eventIndex) => (
 										<li key={eventIndex} className="p-5 sm:p-2">
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px]">{event.Startzeit}</div>
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Filmvorführungen}</div>
-											<div className="font-HalcyonBlack text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Festival}</div>
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Standort}</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px]">{event.Startzeit}</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">{event.Filmvorführungen}</div>
+											<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">{event.Festival}</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">{event.Standort}</div>
 										</li>
 									))}
 							</ul>
@@ -128,6 +128,9 @@ function Schedule() {
 					</div>
 				</div>
 			))}
+			<div className="text-left pt-12 pb-12 my-5">
+				<Btn text={'Programmdetails'} backgroundColor="bg-[#ECEEF5]" hoverColor="hover:bg-[#979FBD]" padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]" fontSize="md:text-[25px]" />
+			</div>
 		</div>
 	);
 }

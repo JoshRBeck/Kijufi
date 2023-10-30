@@ -41,20 +41,23 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="p-4 pl-48 pr-48 m-10">
+		<div className="p-4 pl-60 pr-60 m-10">
 			<div id="countdownContainer" className="flex flex-row items-center justify-evenly text-center">
 				<div className="flex flex-col items-center">
-					<p className="text-4xl lg:text-6xl text-[#e16848] font-bold">{days}:</p>
+					<p className="text-4xl lg:text-6xl text-[#e16848] font-bold">{days}</p>
 					<p className="text-sm font-semibold text-[#e16848]">Tage</p>
 				</div>
+				<p className='text-4xl lg:text-6xl text-[#e16848] font-bold pb-5'>:</p>
 				<div className="flex flex-col items-center">
-					<p className="text-4xl lg:text-6xl font-bold text-[#e16848]">{hours}:</p>
+					<p className="text-4xl lg:text-6xl font-bold text-[#e16848]">{hours}</p>
 					<p className="text-sm font-semibold text-[#e16848]">Stu</p>
 				</div>
+				<p className='text-4xl lg:text-6xl text-[#e16848] font-bold pb-5'>:</p>
 				<div className="flex flex-col items-center">
-					<p className="text-4xl lg:text-6xl font-bold text-[#e16848]">{minutes}:</p>
+					<p className="text-4xl lg:text-6xl font-bold text-[#e16848]">{minutes}</p>
 					<p className="text-sm font-semibold text-[#e16848]">Min</p>
 				</div>
+				<p className='text-4xl lg:text-6xl text-[#e16848] font-bold pb-5'>:</p>
 				<div className="flex flex-col items-center">
 					<p className="text-4xl lg:text-6xl font-bold text-[#e16848]">{seconds}</p>
 					<p className="text-sm font-semibold text-[#e16848]">Sek</p>

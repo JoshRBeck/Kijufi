@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import KijufiBlack from "../Assets/KijufiBlack.png"
 import instagramb from '../Assets/InstaB.png';
-import facebookb from '../Assets/Link.png';
+import facebookb from '../Assets/Rename.png';
 import youtubeb from '../Assets/YoutubeB.png';
 import Mb from '../Assets/MatadorB.png';
 
@@ -27,6 +27,7 @@ const FooterSocial = [
     alt: 'M',
   },
 ];
+
 
 const KontaktForm = () => {
   const [formData, setFormData] = useState({
