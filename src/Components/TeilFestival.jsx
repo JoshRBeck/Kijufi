@@ -2,7 +2,7 @@ import React from 'react';
 
 function TeilFestival() {
 	return (
-		<div className="m-[15px] md:w-[1650px] md:mx-auto md:my-[80px]">
+		<div className="p-14 m-[15px] md:w-[1650px] md:mx-auto md:my-[80px]">
 			<h3 className="text-[16px] font-semibold pb-[35px]  md:text-[50px] ">Werde Teil der Festival-Crew</h3>
 			<p className="text-[12px] text-[#333C3A] md:text-[25px] md:leading-[32px] ">
 				Das Filmfestival wird maßgeblich von Kindern und Jugendlichen veranstaltet. Die junge Festival-Crew trifft alle wichtigen Entscheidungen – vom Titel und Thema des Festivals über die Filmauswahl bis hin zum Rahmenprogramm. Sie sind es auch, die das Festival hosten: als Filmvorführer:innen, Moderator:innen, Presse-Sprecher:innen und Gäste-Betreuer:innen.

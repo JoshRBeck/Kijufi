@@ -98,7 +98,7 @@ function Schedule() {
 	];
 
 	return (
-		<div>
+		<div className='p-12'>
 			{schedule.map((dayInfo, dayIndex) => (
 				<div key={dayIndex}>
 					<div>
