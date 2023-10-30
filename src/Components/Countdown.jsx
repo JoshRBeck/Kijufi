@@ -41,7 +41,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="p-4 m-10">
+		<div className="p-4 pl-48 pr-48 m-10">
 			<div id="countdownContainer" className="flex flex-row items-center justify-evenly text-center">
 				<div className="flex flex-col items-center">
 					<p className="text-4xl lg:text-6xl text-[#e16848] font-bold">{days}:</p>

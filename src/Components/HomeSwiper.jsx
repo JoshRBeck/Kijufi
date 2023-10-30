@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 function HomeSwiper() {
 	return (
 		<>
+			<h2 className='text-[40px] pl-5 pt-5'>Unsere Partner</h2>
 			<Swiper
 				slidesPerView={3}
 				freeMode={true}
