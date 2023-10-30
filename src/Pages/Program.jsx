@@ -13,7 +13,7 @@ function Program() {
 				<p className=" w-[200px] p-2 mt-2 text-[11px] text-[#333C3A] bg-[#F1F7F6] rounded-[9px] md:text-[25px] md:m-auto md:w-fit ">🕘 : Startzeit 🎬 : Filmvorführungen 🥳 : Festival 📍 : Standort</p>
 			</div>
 			<Schedule />
-			<div className="text-center my-5">
+			<div className="text-left p-12 my-5">
 				<Btn text={'Programmdetails'} backgroundColor="bg-[#ECEEF5]" hoverColor="hover:bg-[#979FBD]" padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]" fontSize="md:text-[25px]" />
 			</div>
 
