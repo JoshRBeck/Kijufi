@@ -6,21 +6,21 @@ import jugendkulturzentrum from "../Assets/jugendkulturzentrum.png";
 
 function FilmUndFestival() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col items-center md:flex-row">
       {/* Box for Filmvorführungen */}
-      <div className="w-full md:w-1/2 flex flex-col items-center max-w-full text-center p-4">
+      <div className="w-full md:w-1/2 p-4">
         <h1 className="text-2xl lg:text-3xl font-bold mb-2">Für die Filmvorführungen!</h1>
-        <div className="flex flex-row items-center"> {/* Add items-center here */}
-          <div className="w-1/2 md:w-1/4 lg:w-1/3 p-2"> {/* Adjust the width here */}
-            <div className="w-250 h-183 overflow-hidden">
+        <div className="flex flex-col items-center"> {/* Center the content vertically */}
+          <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+            <div className="w-64 h-48 mx-auto"> {/* Center the image horizontally */}
               <img
                 src={filmTheater}
                 alt="film theater"
-                className="w-250 h-183 overflow-hidden"
+                className="w-full h-full"
               />
             </div>
           </div>
-          <div className="w-1/2 md:w-3/4 lg:w-2/3 text-center p-2"> {/* Adjust the width here */}
+          <div className="w-full md:w-1/2 lg:w-2/3 text-center p-2">
             <h3 className="font-medium text-[25px]">Filmtheater am Friedrichshain</h3>
             <p className="p-2 text-[16px]">
               Bötzowstraße 1-5, 10407 Berlin
@@ -31,26 +31,23 @@ function FilmUndFestival() {
       </div>
 
       {/* Box for Festival */}
-      <div className="w-full md:w-1/2 bg-[#d5e7e361] flex flex-col items-center max-w-full text-center p-4">
+      <div className="w-full md:w-1/2 bg-[#d5e7e361] p-4">
         <h1 className="text-2xl lg:text-3xl font-bold mb-4">Für das Festival!</h1>
-        <div className="flex flex-row items-center">
-          <div className="w-1/2 md:w-1/4 lg:w-1/3 p-2">
-            <div className="w-250 h-250 overflow-hidden">
+        <div className="flex flex-col items-center"> {/* Center the content vertically */}
+          <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+            <div className="w-64 h-64 mx-auto"> {/* Center the image horizontally */}
               <img
                 src={jugendkulturzentrum}
                 alt="youth culture center"
-                className="w-250 h-250 overflow-hidden"
+                className="w-full h-full"
               />
             </div>
           </div>
-          <div className="w-1/2 md:w-3/4 lg:w-2/3 text-center p-2">
+          <div className="w-full md:w-1/2 lg:w-2/3 text-center p-2">
             <h3 className="font-medium text-[25px]">Jugendkulturzentrum Königstadt</h3>
             <p className="p-2 text-[16px]">
               Saarbrücker Str. 24, 10405 Berlin
-              <FontAwesomeIcon
-                icon={faLocationDot}
-                className="text-red-600 ml-2"
-              />
+              <FontAwesomeIcon icon={faLocationDot} className="text-red-600 ml-2" />
             </p>
           </div>
         </div>
