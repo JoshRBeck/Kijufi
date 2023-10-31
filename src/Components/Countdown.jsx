@@ -41,8 +41,8 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="p-4 md:px-60 m-10">
-			<div id="countdownContainer" className="flex flex-row items-center justify-evenly text-center">
+		<div className="p-4 md:px-60">
+			<div id="countdownContainer" className="flex flex-row items-center justify-center md:justify-evenly text-center">
 				<div className="flex flex-col items-center">
 					<p className="text-4xl lg:text-6xl text-[#e16848] font-bold">{days}</p>
 					<p className="text-sm font-semibold text-[#e16848]">Tage</p>

@@ -22,7 +22,7 @@ function FilmUndFestival() {
 					</div>
 					<div className="w-full text-center p-2">
 						<h3 className="font-medium text-[25px]">Filmtheater am Friedrichshain</h3>
-						<p className="p-2 text-[16px]">
+						<p className=" text-[16px]">
 							Bötzowstraße 1-5, 10407 Berlin
 							<FontAwesomeIcon icon={faLocationDot} className="text-blue-600 ml-2" />
 						</p>
@@ -45,7 +45,7 @@ function FilmUndFestival() {
 					</div>
 					<div className="w-full md:w-1/2 lg:w-2/3 text-center p-2">
 						<h3 className="font-medium text-[25px]">Jugendkulturzentrum Königstadt</h3>
-						<p className="p-2 text-[16px]">
+						<p className=" text-[16px]">
 							Saarbrücker Str. 24, 10405 Berlin
 							<FontAwesomeIcon icon={faLocationDot} className="text-red-600 ml-2" />
 						</p>
