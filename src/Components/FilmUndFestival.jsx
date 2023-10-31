@@ -6,7 +6,7 @@ import jugendkulturzentrum from '../Assets/jugendkulturzentrum.png';
 
 function FilmUndFestival() {
 	return (
-		<div className="flex flex-col items-center md:flex-row text-center">
+		<div className="pt-[150px] md:pt[50px] flex flex-col items-center md:flex-row text-center">
 			{/* Box for Filmvorführungen */}
 			<div className="w-full block md:flex items-center flex-col p-4">
 				<h1 className="text-2xl lg:text-3xl font-bold mb-2">Für die Filmvorführungen!</h1>
