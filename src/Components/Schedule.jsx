@@ -8,6 +8,7 @@ import garland3 from '../Assets/garland3.png';
 import Btn from './Btn';
 
 function Schedule() {
+
 	const schedule = [
 		{
 			day: 'FR, 8.12',
@@ -98,38 +99,68 @@ function Schedule() {
 	];
 
 	return (
-		<div>
+		<div className="">
 			{schedule.map((dayInfo, dayIndex) => (
 				<div key={dayIndex}>
-					<div>
-						<img src={dayInfo.garland} alt={`Garland for ${dayInfo.day}`} className="w-full md:min-w-full" />
-					</div>
-					<div className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse md:text-left gap-[550px]' : ''}`}>
+					<img
+						src={dayInfo.garland}
+						alt={`Garland for ${dayInfo.day}`}
+						className="w-full md:min-w-full"
+					/>
+					<div
+						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse md:text-left gap-[550px]' : ''
+							}`}
+					>
 						<div className="w-full">
 							<h2 className="text-shadow md:text-[60px]">{dayInfo.day}</h2>
 							<ul>
 								{dayInfo.events
-									.filter((event) => event.Startzeit || event.Filmvorführungen || event.Festival || event.Standort)
+									.filter(
+										(event) =>
+											event.Startzeit || event.Filmvorführungen || event.Festival || event.Standort
+									)
 									.map((event, eventIndex) => (
 										<li key={eventIndex} className="p-5 sm:p-2">
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px]">{event.Startzeit}</div>
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Filmvorführungen}</div>
-											<div className="font-HalcyonBlack text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Festival}</div>
-											<div className="font-HalcyonMedium text-[16px] md:text-[25px] whitespace-normal break-normal">{event.Standort}</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px]">
+												{event.Startzeit}
+											</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
+												{event.Filmvorführungen}
+											</div>
+											<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">
+												{event.Festival}
+											</div>
+											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
+												{event.Standort}
+											</div>
 										</li>
 									))}
 							</ul>
 						</div>
-						<div className=" hidden md:block ">
+						<div className="hidden md:block">
 							<div>
-								<img className="md:h-[600px]" src={dayInfo.poster.imageSrc} alt={`Poster for ${dayInfo.day}`} />
+								<img
+									className="md:h-[600px]"
+									src={dayInfo.poster.imageSrc}
+									alt={`Poster for ${dayInfo.day}`}
+								/>
 							</div>
 						</div>
 					</div>
 				</div>
 			))}
+			<div className="text-left pt-12 pb-12 my-5">
+				<Btn
+					text={'Programmdetails'}
+					backgroundColor="bg-[#ECEEF5]"
+					hoverColor="hover:bg-[#979FBD]"
+					padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]"
+					fontSize="md:text-[25px]"
+				/>
+			</div>
 		</div>
 	);
+
 }
 
 export default Schedule;

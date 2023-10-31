@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import KijufiBlack from "../Assets/KijufiBlack.png"
 import instagramb from '../Assets/InstaB.png';
-import facebookb from '../Assets/Link.png';
+import facebookb from '../Assets/Rename.png';
 import youtubeb from '../Assets/YoutubeB.png';
 import Mb from '../Assets/MatadorB.png';
 
@@ -28,6 +28,7 @@ const FooterSocial = [
   },
 ];
 
+
 const KontaktForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -48,14 +49,18 @@ const KontaktForm = () => {
     setStatus("Sending...");
 
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    console.log('REACT_APP_BACKEND_URL:', process.env.REACT_APP_BACKEND_URL);
+    console.log('backendUrl:', backendUrl);
 
-    const response = await fetch(`${backendUrl}/submit`, {
+    const response = await fetch(`${backendUrl}api/submit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     });
+
+    console.log('Form data submitted. Response:', response);
 
     setStatus("Submit");
 
