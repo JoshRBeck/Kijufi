@@ -9,9 +9,9 @@ function ImpressumPage() {
         <h3 className="font-bold text-[16px] md:text-[25px]">Landesverband Kinder- & Jugendfilm Berlin e. V. </h3>
         <p className="text-[16px] md:text-[25px]">Am sudhaus 2</p>
         <p className="text-[16px] md:text-[25px]">12053 Berlin</p>
-        <br /><br /> {/* Use {'<br />'} for line breaks */}
+        <br /><br />
         <p className="text-[16px] md:text-[25px]">Vereinsregister Amtsgericht Charlottenburg | Registernummer VR 9413 Nz VAT-ID/Umsatzsteuer-Identifikationsnummer DE361265479</p>
-        <br /><br /> {/* Use {'<br />'} for line breaks */}
+        <br /><br />
         <h3 className="font-bold text-[16px] md:text-[25px]">Vertretungsberechtigte Vorstandsmitglieder und verantwortliche Redakteure:</h3>
         <p className="text-[16px] md:text-[25px] mb-10">
           Max Neu<br />Ralf Schlotter<br />Claudia Ziegenfuß
@@ -23,7 +23,7 @@ function ImpressumPage() {
         <h3 className="font-bold text-[16px] md:text-[25px]">Web Developers of the Website:</h3>
         <p className="text-[16px] md:text-[25px] mb-10" style={{ overflowWrap: 'break-word' }}>
           Josh Beck - <a href="https://www.linkedin.com/in/beckrobertjosh/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'>https://www.linkedin.com/in/beckrobertjosh/</a><br />
-          <br /> {/* Use {'<br />'} for line breaks */}
+          <br />
           Alexander Manoury - <a href="https://www.linkedin.com/in/alexandre-maunoury-06837319a/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'>https://www.linkedin.com/in/alexandre-maunoury-06837319a/</a><br />
           <br />
           Lukas Jülich - <a href="https://www.linkedin.com/in/lukas-j%C3%BClich-062583243/" target="_blank" rel="noopener noreferrer" className='text-[#E16848]'>https://www.linkedin.com/in/lukas-j%C3%BClich-062583243/</a><br />
