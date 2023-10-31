@@ -3,7 +3,7 @@ import bg from '../Assets/vector15.png';
 
 function ImpressumPage() {
   return (
-    <section style={{ backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center top' }} className="p-3 mt-24 md:mt-0 md:p-10">
+    <section style={{ backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center top' }} className="p-3 mt-28 md:mt-0 md:p-10">
       <h1 className="font-bold text-[25px] md:text-[50px] mb-5">Impressum</h1>
       <div>
         <h3 className="font-bold text-[16px] md:text-[25px]">Landesverband Kinder- & Jugendfilm Berlin e. V. </h3>
