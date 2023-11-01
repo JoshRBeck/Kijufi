@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com"
 import KijufiBlack from "../Assets/KijufiBlack.png"
 import instagramb from '../Assets/InstaB.png';
 import facebookb from '../Assets/Rename.png';
 import youtubeb from '../Assets/YoutubeB.png';
 import Mb from '../Assets/MatadorB.png';
+import Btn from "./Btn";
 
 const FooterSocial = [
   {
@@ -31,105 +33,91 @@ const FooterSocial = [
 
 const KontaktForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     betreff: "",
     nachricht: "",
   });
 
-  const [status, setStatus] = useState("Submit");
-
-  const handleInputChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
 
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
-    console.log('REACT_APP_BACKEND_URL:', process.env.REACT_APP_BACKEND_URL);
-    console.log('backendUrl:', backendUrl);
+    formData.contact_number = (Math.random() * 100000) | 0;
 
-    const response = await fetch(`${backendUrl}api/submit`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-
-    console.log('Form data submitted. Response:', response);
-
-    setStatus("Submit");
-
-    if (response.ok) {
-      console.log("Form data submitted successfully!");
-    } else {
-      console.log("Form data submission failed");
-    }
+    emailjs.sendForm('service_prd51ot', 'template_nujrddd', form.current, 'DysyzFqogBK_AC4Rs')
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
     <div className="flex flex-row-reverse">
       {/* Container for Contact Form */}
       <div className="w-full md:w-1/2 p-10 flex flex-col justify-center mx-auto border border-solid border-gray-300 shadow-lg bg-[#E16848]">
-        <h2 className="text-[24px] font-regular text-white mb-4">📩 Wir freuen uns von dir zu hören!</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="formField mb-5">
-            <label htmlFor="name"></label>
+        <h2 className="text-[16px] font-regular text-white pb-8">📩 Wir freuen uns von dir zu hören!</h2>
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center">
+          <input type="hidden" name="contact_number" />
+          <div className="mb-4">
             <input
               type="text"
-              id="name"
-              name="name"
-              placeholder="Dein Name"
-              value={formData.name}
-              onChange={handleInputChange}
-              style={{ color: 'black' }}
-              className="inputField rounded-s w-full text-[#D5E7E3] p-1"
+              name="user_name"
+              id="user_name"
+              value={formData.user_name}
+              onChange={handleChange}
+              className="w-full rounded-lg border-black border p-2 placeholder-[#9CA3AF]::placeholder"
+              placeholder="Name"
             />
           </div>
-          <div className="formField mb-5">
-            <label htmlFor="email"></label>
+          <div className="mb-4">
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              value={formData.user_email}
+              onChange={handleChange}
+              className="w-full rounded-lg border-black border p-2 placeholder-[#9CA3AF]::placeholder"
+              placeholder="Email"
+            />
+          </div>
+          <div className="w-full mb-4">
             <input
               type="text"
-              id="email"
-              name="email"
-              placeholder="Deine Email Addresse"
-              value={formData.email}
-              onChange={handleInputChange}
-              style={{ color: 'black' }}
-              className="inputField rounded-s w-full text-[#D5E7E3] p-1"
-            />
-          </div>
-          <div className="formField mb-5">
-            <label htmlFor="betreff"></label>
-            <textarea
-              id="betreff"
               name="betreff"
-              placeholder="Betreff"
+              id="betreff"
               value={formData.betreff}
-              onChange={handleInputChange}
-              style={{ color: 'black' }}
-              className="textAreaField rounded-s w-full text-[#D5E7E3] p-1"
+              onChange={handleChange}
+              className="w-full rounded-lg border-black border p-2 placeholder-[#9CA3AF]::placeholder"
+              placeholder="Betreff"
             />
           </div>
-          <div className="formField mb-5">
-            <label htmlFor="nachricht"></label>
+          <div className="mb-4">
             <textarea
-              id="nachricht"
               name="nachricht"
-              placeholder="Nachricht"
+              id="nachricht"
               value={formData.nachricht}
-              onChange={handleInputChange}
-              style={{ color: 'black' }}
-              className="textAreaField rounded-s w-full text-[#D5E7E3] p-1"
-            />
+              onChange={handleChange}
+              className="w-full rounded-lg border-black border p-2 placeholder-[#9CA3AF]::placeholder"
+              placeholder="Nachricht"
+            ></textarea>
           </div>
-          <button type="submit" className="submitButton bg-white text-[#000] px-8 py-3 rounded-full cursor-pointer transition hover:bg-blue-500">
-            Senden
-          </button>
+          <Btn
+            text="Senden"
+            backgroundColor="bg-white"
+            hoverColor="hover:[#B8D4CE]"
+            padding="px-8 py-3"
+            fontSize="text-black"
+            customClasses="w-fit"
+          />
         </form>
       </div>
 
