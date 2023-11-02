@@ -149,7 +149,7 @@ function Schedule() {
 					</div>
 				</div>
 			))}
-			<div className="text-left pt-12 pb-12 my-5">
+			<div className="flex justify-center text-left pt-12 pb-12 md:max-w-[1650px] p-5 my-5">
 				<Btn
 					text={'Programmdetails'}
 					backgroundColor="bg-[#ECEEF5]"

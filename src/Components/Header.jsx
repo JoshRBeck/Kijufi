@@ -32,7 +32,7 @@ function Header() {
 						</li>
 						<li>
 							<Link>
-								<Btn text={'Tickets'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
+								<Btn text={'Tickets coming soon'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
 							</Link>
 						</li>
 					</ul>
@@ -53,7 +53,7 @@ function Header() {
 						</li>
 						<li className="">
 							<Link to={'program'}>
-								<Btn text={'Tickets'} backgroundColor="bg-[#333C3A]" hoverColor="hover:bg-[#5BA092]" />
+								<Btn text={'Tickets coming soon'} backgroundColor="bg-[#333C3A]" hoverColor="hover:bg-[#5BA092]" />
 							</Link>
 						</li>
 						<p className=" text-[12px]">*Ticketverkauf startet Anfang November 2023</p>

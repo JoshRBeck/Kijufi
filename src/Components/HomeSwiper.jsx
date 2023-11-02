@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
+
 // import required modules
 import { FreeMode, Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
@@ -24,11 +25,12 @@ function HomeSwiper() {
 					disableOnInteraction: false,
 				}}
 				modules={[FreeMode, Autoplay]}
-				className="mySwiper">
+				className="mySwiper"
+			>
 				{SliderImgs.map((element, index) => (
-					<SwiperSlide className=" py-7 md:py-16 md:px-3" key={index}>
+					<SwiperSlide className="py-7 md:py-16 md:px-3 w-fit max-w-full" key={index}>
 						<Link to={element.link}>
-							<img className="max-w-full" src={element.image} alt={element.alt} />
+							<img className="max-w-full w-fit md:pl-20 md:pr-20" src={element.image} alt={element.alt} />
 						</Link>
 					</SwiperSlide>
 				))}

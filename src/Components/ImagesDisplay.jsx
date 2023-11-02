@@ -1,5 +1,4 @@
 import React from 'react';
-
 import garland1 from '../Assets/garland1.png';
 import garland2 from '../Assets/garland2.png';
 import garland3 from '../Assets/garland3.png';
