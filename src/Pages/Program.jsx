@@ -14,9 +14,10 @@ function Program() {
 			</div>
 			<Schedule />
 
-
 			<FestivalRahmen />
+			<section id="#scrollToMe">
 			<TeilFestival />
+			</section>
 			<Platzhalter />
 		</div>
 	);

@@ -17,6 +17,7 @@ function Home() {
 			<HomeFantasie />
 			<HomeGarland />
 			<HomeFreiheit />
+
 			<HomeFestival />
 			<HomeSwiper />
 		</div>
