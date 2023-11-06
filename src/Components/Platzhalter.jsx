@@ -5,7 +5,7 @@ import Btn from './Btn';
 function Platzhalter() {
 	return (
 		<div className="flex flex-col lg:flex-row text-center md:mb-[55px]">
-			<div className=" md:text-left md:flex items-center md:max-w-[1650px] md:m-auto">
+			<div className=" md:text-left md:flex xl:flex-row items-center md:max-w-[1650px] md:m-auto">
 				<h3 className="text-[#323A64] font-semibold text-[16px] md:text-[50px] mx-16 my-10">Terminübersicht Alle Projekttage der Festival-Crew</h3>
 				<img className="w-full p-5 max-w-[700px]" src={platzhalterImg} alt="-platzhalter flyer" />
 			</div>

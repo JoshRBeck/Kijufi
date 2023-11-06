@@ -108,7 +108,7 @@ function Schedule() {
 						className="w-full md:min-w-full"
 					/>
 					<div
-						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse items-center md:text-left gap-[50px]' : ''
+						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse items-center md:text-center gap-[50px]' : ''
 							}`}
 					>
 						<div className="w-full">
