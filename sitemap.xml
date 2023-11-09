@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://kinderrechte-filmfestival.de/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://kinderrechte-filmfestival.de/program</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://kinderrechte-filmfestival.de/kontakt</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://kinderrechte-filmfestival.de/datenschutz</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://kinderrechte-filmfestival.de/impressum</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+    <url>
+    <loc>http://kinderrechte-filmfestival.de/error</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+    <url>
+    <loc>http://kinderrechte-filmfestival.de/zeichnungen</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
