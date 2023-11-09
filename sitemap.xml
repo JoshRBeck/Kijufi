@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://kijufi.vercel.app/</loc>
+    <loc>http://kinderrechte-filmfestival.de/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>http://kijufi.vercel.app/program</loc>
+    <loc>http://kinderrechte-filmfestival.de/program</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://kijufi.vercel.app/contact</loc>
+    <loc>http://kinderrechte-filmfestival.de/contact</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://kijufi.vercel.app/datenschutz</loc>
+    <loc>http://kinderrechte-filmfestival.de/datenschutz</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://kijufi.vercel.app/impressum</loc>
+    <loc>http://kinderrechte-filmfestival.de/impressum</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
     <url>
-    <loc>http://kijufi.vercel.app/error</loc>
+    <loc>http://kinderrechte-filmfestival.de/error</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
