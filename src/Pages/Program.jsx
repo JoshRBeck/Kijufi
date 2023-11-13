@@ -1,13 +1,27 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 import Schedule from '../Components/Schedule';
 import FestivalRahmen from '../Components/FestivalRahmen';
 import TeilFestival from '../Components/TeilFestival';
 import Platzhalter from '../Components/Platzhalter';
-import Btn from '../Components/Btn';
+
 
 function Program() {
 	return (
 		<div>
+			<Helmet>
+				<title>Programm - Gemainsam Grenzenlos Kinderrechte Filmfestival 2023</title>
+				<meta name="description" content="Erfahren Sie mehr über das Festival-Programm, den Zeitplan und wie Sie als Freiwillige mitwirken können." />
+				<meta name="keywords" content="Programm, Festivalablauf, Zeitplan, Freiwillige, Volunteers, Gemainsam Grenzenlos, Kinderrechte Filmfestival, Kinderrechte-Filmfestival" />
+
+				<meta property="og:title" content="Programm - Gemainsam Grenzenlos Kinderrechte Filmfestival 2023" />
+				<meta property="og:description" content="Erfahren Sie mehr über das Festival-Programm, den Zeitplan und wie Sie als Freiwillige mitwirken können." />
+				<meta property="og:url" content="http://kinderrechte-filmfestival.de/programm" />
+
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+				<link rel="canonical" href="http://kinderrechte-filmfestival.de/programm" />
+			</Helmet>
 			<section id="#scrollToMe">
 				<TeilFestival />
 			</section>
