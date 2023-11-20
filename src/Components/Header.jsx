@@ -31,9 +31,9 @@ function Header() {
 							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
 						<li>
-							<Link>
-								<Btn text={'Tickets coming soon'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
-							</Link>
+							<a href="https://www.yorck.de/specials/gemeinsam-grenzenlos-das-kinderrechte-filmfestival-2023">
+								<Btn text={'Tickets'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -52,12 +52,11 @@ function Header() {
 							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
 						<li className="">
-							<Link to={'program'}>
-								<Btn text={'Tickets coming soon'} backgroundColor="bg-[#333C3A]" hoverColor="hover:bg-[#5BA092]" />
-							</Link>
+							<a href="https://www.yorck.de/specials/gemeinsam-grenzenlos-das-kinderrechte-filmfestival-2023">
+								<Btn text={'Tickets'} backgroundColor="bg-[#333C3A]" hoverColor="hover:bg-[#5BA092]" />
+							</a>
 						</li>
 						<p className=" text-[12px]">*Ticketverkauf startet Anfang November 2023</p>
-
 						<ul className="flex">
 							{MenuLinKs.map((link, index) => (
 								<li className="mx-1" key={index}>

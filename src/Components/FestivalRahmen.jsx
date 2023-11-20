@@ -9,7 +9,7 @@ function FestivalRahmen() {
 				Die Festival-Vorbereitungen laufen auf Hochtouren. Mehr Infos zur Festivalparty, zum Catering und weiteren Events im Begleitprogramm könnt ihr spätestens Ende November hier nachlesen.
 				<br />
 				<br />
-				Ihr kommt aus Berlin und habt Lust, als Mitglied der Crew das Festival mitzugestalten. Dann lest weiter unten, wie ihr das tun könnt.
+				{/* Ihr kommt aus Berlin und habt Lust, als Mitglied der Crew das Festival mitzugestalten. Dann lest weiter unten, wie ihr das tun könnt. */}
 			</p>
 		</div>
 	);

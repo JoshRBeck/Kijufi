@@ -19,9 +19,7 @@ function App() {
   }, [location.pathname]);
   return (
     <>
-
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="program" element={<Program />} />
@@ -33,9 +31,6 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-
-
-
     </>
   );
 }
