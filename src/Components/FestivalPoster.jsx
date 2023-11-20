@@ -1,10 +1,9 @@
 import React from 'react';
-import Poster from "../Assets/FestivalPoster.png"
-// import Festival from "../Assets/Festival.pdf"
 import instagram from '../Assets/instagram.png';
 import facebook from '../Assets/facebook.png';
 import youtube from '../Assets/youtube.png';
 import M from '../Assets/M.png';
+import NewPoster from "../Assets/NewPoster.png"
 
 const FooterSocial = [
 	{
@@ -36,7 +35,7 @@ function FestivalPoster() {
 				<h1 className="font-bold text-[16px] md:text-[50px] mt-10">Holen Sie sich das Festivalposter hier</h1>
 			</div>
 			<div className="md:flex flex-row content-center align-center w-full">
-				<img src={Poster} className="w-full md:w-1/2 md:h-auto p-10 rounded-lg" alt="festival poster" />
+				<img src={NewPoster} className="w-full md:w-1/2 md:h-auto p-10 rounded-lg" alt="festival poster" />
 				<div className="p-10">
 					<div className="flex flex-col items-center justify-around h-1/2">
 						<h3 className="font-bold text-[16px] md:text-[30px] mb-12 pt-14">Click here to get the poster as PDF</h3>

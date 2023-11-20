@@ -2,6 +2,7 @@ import das from '../Assets/das-logo.png';
 import Kijufi from '../Assets/Kijufi_Logo.png';
 import { Link } from 'react-router-dom';
 import { FooterSocial, FooterNavLinks } from '../Data/FooterLinks';
+
 function Footer() {
 	return (
 		<footer>

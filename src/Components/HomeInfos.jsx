@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Btn from './Btn';
+
 function HomeInfos() {
 	return (
 		<section className="bg-[#D5E7E3] h-fit md:h-[650px] py-10 text-center md:flex flex-col items-center justify-center gap-7">
