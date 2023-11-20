@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet'
 import Schedule from '../Components/Schedule';
 import FestivalRahmen from '../Components/FestivalRahmen';
-import TeilFestival from '../Components/TeilFestival';
+// import TeilFestival from '../Components/TeilFestival';
 import Platzhalter from '../Components/Platzhalter';
 
 
