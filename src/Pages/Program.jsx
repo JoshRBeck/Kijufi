@@ -4,7 +4,7 @@ import Schedule from '../Components/Schedule';
 import FestivalRahmen from '../Components/FestivalRahmen';
 // import TeilFestival from '../Components/TeilFestival';
 import Platzhalter from '../Components/Platzhalter';
-import YouTubeEmbed from '../Components/PromoVideo';
+// import YouTubeEmbed from '../Components/PromoVideo';
 
 
 function Program() {
@@ -33,7 +33,7 @@ function Program() {
 			</section> */}
 			<FestivalRahmen />
 			<Platzhalter />
-			<YouTubeEmbed videoId="isA_1zgGJ2Y" title="Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 (Kino-Trailer)"/>
+		
 		</div>
 	);
 }

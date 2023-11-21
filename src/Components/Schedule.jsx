@@ -151,7 +151,7 @@ function Schedule() {
 			))}
 			<div className="flex justify-center text-left pt-12 pb-12 md:max-w-[1650px] p-5 my-5">
 				<Btn
-					text={'Programmdetails'}
+					text={'Programmdetails Coming Soon'}
 					backgroundColor="bg-[#ECEEF5]"
 					hoverColor="hover:bg-[#979FBD]"
 					padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]"
