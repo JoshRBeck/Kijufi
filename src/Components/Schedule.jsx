@@ -27,7 +27,7 @@ function Schedule() {
 				},
 				{
 					Startzeit: '🕘16.00',
-					Filmvorführungen: '🎬Festivaleröffnung',
+					Filmvorführungen: '🎬Festivaleröffnung: Kurzfilmprogramm Freiheit',
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
@@ -50,7 +50,7 @@ function Schedule() {
 			events: [
 				{
 					Startzeit: '🕘11.00',
-					Filmvorführungen: '🎬Kurzfilmprogramm 1',
+					Filmvorführungen: '🎬Kurzfilmprogramm Rechte',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
 				{
@@ -61,7 +61,7 @@ function Schedule() {
 				},
 				{
 					Startzeit: '🕘15.30',
-					Filmvorführungen: '🎬Kurzfilmprogramm 1',
+					Filmvorführungen: '🎬Kurzfilmprogramm Mitbestimmung',
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
@@ -90,7 +90,7 @@ function Schedule() {
 			events: [
 				{
 					Startzeit: '🕘11.00',
-					Filmvorführungen: '🎬Publikumsfavoriten + Kinderrechte-Überraschungsfilm 2',
+					Filmvorführungen: '🎬Publikumsfavoriten + Wochendrebellen Kinderrechte-Überraschungsfilm 2',
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 2',
 				},
