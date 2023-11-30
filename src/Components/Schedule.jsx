@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import position3 from '../Assets/position3.png';
 import position4 from '../Assets/position4.png';
 import position6 from '../Assets/position6.png';
@@ -8,6 +8,11 @@ import garland3 from '../Assets/garland3.png';
 import Btn from './Btn';
 
 function Schedule() {
+
+	const handleLinkClick = useCallback((event, link) => {
+		event.preventDefault();
+		window.open(link.src, '_blank');
+	}, []);
 
 	const schedule = [
 		{
@@ -22,18 +27,27 @@ function Schedule() {
 				{
 					Startzeit: '🕘10.00',
 					Filmvorführungen: '🎬Kurzfilm-Programm für Schulklasse',
+					link: {
+						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-S.pdf'
+					},
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
 				{
 					Startzeit: '🕘16.00',
-					Filmvorführungen: '🎬Festivaleröffnung: Kurzfilmprogramm Freiheit',
+					Filmvorführungen: '🎬Festivaleröffnung: Kurzfilmprogramm FREIHEIT',
+					link: {
+						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-1_FREIHEIT.pdf'
+					},
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
 				{
 					Startzeit: '🕘19.00',
 					Filmvorführungen: '',
+					link: {
+						src: ''
+					},
 					Festival: '🥳Festival-Party (Nur mit einladung)',
 					Standort: '📍Jugendkulturzentrum Königstadt',
 				},
@@ -50,7 +64,10 @@ function Schedule() {
 			events: [
 				{
 					Startzeit: '🕘11.00',
-					Filmvorführungen: '🎬Kurzfilmprogramm Rechte',
+					Filmvorführungen: '🎬Kurzfilmprogramm RECHTE',
+					link: {
+						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-2_RECHTE.pdf'
+					},
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
 				{
@@ -61,7 +78,10 @@ function Schedule() {
 				},
 				{
 					Startzeit: '🕘15.30',
-					Filmvorführungen: '🎬Kurzfilmprogramm Mitbestimmung',
+					Filmvorführungen: '🎬Kurzfilmprogramm MITBESTIMMUNG',
+					link: {
+						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-3_MITBESTIMMUNG.pdf'
+					},
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
@@ -90,7 +110,7 @@ function Schedule() {
 			events: [
 				{
 					Startzeit: '🕘11.00',
-					Filmvorführungen: '🎬Publikumsfavoriten + Wochendrebellen Kinderrechte-Überraschungsfilm 2',
+					Filmvorführungen: '🎬Publikumsfavoriten + WOCHENENDREBELLEN ',
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 2',
 				},
@@ -108,8 +128,7 @@ function Schedule() {
 						className="w-full md:min-w-full"
 					/>
 					<div
-						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse items-center md:text-center gap-[50px]' : ''
-							}`}
+						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse items-center md:text-center gap-[50px]' : ''}`}
 					>
 						<div className="w-full">
 							<h2 className="text-shadow md:text-[60px]">{dayInfo.day}</h2>
@@ -117,7 +136,10 @@ function Schedule() {
 								{dayInfo.events
 									.filter(
 										(event) =>
-											event.Startzeit || event.Filmvorführungen || event.Festival || event.Standort
+											event.Startzeit ||
+											event.Filmvorführungen ||
+											event.Festival ||
+											event.Standort
 									)
 									.map((event, eventIndex) => (
 										<li key={eventIndex} className="p-5 sm:p-2">
@@ -125,7 +147,19 @@ function Schedule() {
 												{event.Startzeit}
 											</div>
 											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
-												{event.Filmvorführungen}
+												{event.link ? (
+													<a
+														href={event.link.src}
+														target="_blank"
+														rel="noopener noreferrer"
+														onClick={(e) => handleLinkClick(e, event.link)}
+														className="text-blue-500 underline"
+													>
+														{event.Filmvorführungen}
+													</a>
+												) : (
+													<span>{event.Filmvorführungen}</span>
+												)}
 											</div>
 											<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">
 												{event.Festival}
@@ -135,6 +169,7 @@ function Schedule() {
 											</div>
 										</li>
 									))}
+
 							</ul>
 						</div>
 						<div className="hidden md:block">
@@ -160,7 +195,6 @@ function Schedule() {
 			</div>
 		</div>
 	);
-
 }
 
 export default Schedule;
