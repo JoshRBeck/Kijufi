@@ -23,7 +23,7 @@ function Footer() {
 				<p className="md:hidden">Created by</p>
 				<img className="md:hidden" src={Kijufi} alt="Logo" />
 
-				<ul className="flex gap-5 md:gap-20">
+				<ul className="flex gap-5 md:gap-20 md:pl-5">
 					{FooterNavLinks.map((link, index) => (
 						<li key={index}>
 							<Link className=" text-[12px] md:text-[22px]" to={link.link}>
@@ -33,7 +33,7 @@ function Footer() {
 					))}
 				</ul>
 
-				<ul className="flex">
+				<ul className="flex md:pr-5">
 					{FooterSocial.map((link, index) => (
 						<li className="mx-1" key={index}>
 							<Link to={link.link}>

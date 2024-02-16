@@ -6,9 +6,9 @@ import HomeFantasie from '../Components/HomeFantasie';
 import HomeFreiheit from '../Components/HomeFreiheit';
 import HomeFestival from '../Components/HomeFestival';
 import HomeSwiper from '../Components/HomeSwiper';
-import Countdown from '../Components/Countdown';
+// import Countdown from '../Components/Countdown';
 import HomeGarland from '../Components/HomeGarland';
-import YouTubeEmbed from '../Components/PromoVideo';
+
 
 function Home() {
 	return (
@@ -27,8 +27,8 @@ function Home() {
 				<link rel="canonical" href="http://kinderrechte-filmfestival.de" />
 			</Helmet>
 			<HomeHero />
-			<Countdown />
-			<YouTubeEmbed videoId="isA_1zgGJ2Y" title="Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 (Kino-Trailer)" />
+			{/* <Countdown /> */}
+			
 			<HomeInfos />
 			<HomeFantasie />
 			<HomeGarland />

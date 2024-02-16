@@ -1,10 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet'
 import Schedule from '../Components/Schedule';
-import FestivalRahmen from '../Components/FestivalRahmen';
-// import TeilFestival from '../Components/TeilFestival';
 import Platzhalter from '../Components/Platzhalter';
-// import YouTubeEmbed from '../Components/PromoVideo';
+import YouTubeEmbed from '../Components/PromoVideo';
 
 
 function Program() {
@@ -28,10 +26,7 @@ function Program() {
 				<p className=" w-[200px] p-4 mt-2 text-[16px] text-[#333C3A] bg-[#F1F7F6] rounded-[15px] md:text-[25px] md:m-auto md:w-fit ">🕘 : Startzeit 🎬 : Filmvorführungen 🥳 : Festival 📍 : Standort</p>
 			</div>
 			<Schedule />
-			{/* <section id="#scrollToMe">
-				<TeilFestival />
-			</section> */}
-			<FestivalRahmen />
+			<YouTubeEmbed videoId="Sfit78r-SPA" title="Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 (Kino-Trailer)" />
 			<Platzhalter />
 		
 		</div>

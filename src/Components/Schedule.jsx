@@ -5,7 +5,6 @@ import position6 from '../Assets/position6.png';
 import garland1 from '../Assets/garland1.png';
 import garland2 from '../Assets/garland2.png';
 import garland3 from '../Assets/garland3.png';
-import Btn from './Btn';
 
 function Schedule() {
 
@@ -37,7 +36,7 @@ function Schedule() {
 					Startzeit: '🕘16.00',
 					Filmvorführungen: '🎬Festivaleröffnung: Kurzfilmprogramm FREIHEIT',
 					link: {
-						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-1_FREIHEIT.pdf'
+						src: 'https://www.youtube.com/watch?v=FwKaBCIGSX8'
 					},
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
@@ -66,7 +65,7 @@ function Schedule() {
 					Startzeit: '🕘11.00',
 					Filmvorführungen: '🎬Kurzfilmprogramm RECHTE',
 					link: {
-						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-2_RECHTE.pdf'
+						src: 'https://www.youtube.com/watch?v=06qVacfs6P8&t=3sf'
 					},
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
 				},
@@ -80,7 +79,7 @@ function Schedule() {
 					Startzeit: '🕘15.30',
 					Filmvorführungen: '🎬Kurzfilmprogramm MITBESTIMMUNG',
 					link: {
-						src: 'https://kijufi.de/wp-content/uploads/2023/11/Programmzettel_KFP-3_MITBESTIMMUNG.pdf'
+						src: 'https://www.youtube.com/watch?v=7hxH0dS5S5o&t=1s'
 					},
 					Festival: '',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
@@ -185,13 +184,6 @@ function Schedule() {
 				</div>
 			))}
 			<div className="flex justify-center text-left pt-12 pb-12 md:max-w-[1650px] p-5 my-5">
-				<Btn
-					text={'Programmdetails Coming Soon'}
-					backgroundColor="bg-[#ECEEF5]"
-					hoverColor="hover:bg-[#979FBD]"
-					padding="py-[5px] px-[20px] md:py-[11px] md:px-[35px]"
-					fontSize="md:text-[25px]"
-				/>
 			</div>
 		</div>
 	);
