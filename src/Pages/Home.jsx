@@ -26,7 +26,7 @@ function Home() {
 
 				<link rel="canonical" href="http://kinderrechte-filmfestival.de" />
 			</Helmet>
-			<HomeHero />
+			{/* <HomeHero /> */}
 			{/* <Countdown /> */}
 			
 			<HomeInfos />

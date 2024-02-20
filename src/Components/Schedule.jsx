@@ -5,6 +5,9 @@ import position6 from '../Assets/position6.png';
 import garland1 from '../Assets/garland1.png';
 import garland2 from '../Assets/garland2.png';
 import garland3 from '../Assets/garland3.png';
+import program1 from '../Assets/ProgramPics/1.Programm.jpg'
+import program2 from '../Assets/ProgramPics/2.Programm.jpg'
+import program3 from '../Assets/ProgramPics/3.program.jpg'
 
 function Schedule() {
 
@@ -94,6 +97,7 @@ function Schedule() {
 					Startzeit: '🕘19.30',
 					Filmvorführungen: ' 🎬Kinderrechte-Überraschungsfilm 1',
 					Festival: '',
+					info: 'Q&A mit Mariam Rasheed Spoken Word Poetin und Aktivistin',
 					Standort: '📍Jugendkulturzentrum Königstadt',
 				},
 			],
@@ -111,6 +115,7 @@ function Schedule() {
 					Startzeit: '🕘11.00',
 					Filmvorführungen: '🎬Publikumsfavoriten + WOCHENENDREBELLEN ',
 					Festival: '',
+					info: 'Q&A mit Jason von Juterczenka Autor, Preisträger Grimme Online Award und Wochenendrebellund Nils Bollenbach, Jungpolitiker',
 					Standort: '📍Filmtheater am Friedrichshain, Saal 2',
 				},
 			],
@@ -138,6 +143,7 @@ function Schedule() {
 											event.Startzeit ||
 											event.Filmvorführungen ||
 											event.Festival ||
+											event.info ||
 											event.Standort
 									)
 									.map((event, eventIndex) => (
@@ -163,6 +169,7 @@ function Schedule() {
 											<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">
 												{event.Festival}
 											</div>
+											<div className="font-bold md:text-[25px]">{event.info}</div>
 											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
 												{event.Standort}
 											</div>
