@@ -32,7 +32,7 @@ function Home() {
 			<YouTubeEmbed />
 			<HomeInfos />
 			<HomeFantasie />
-			<HomeGarland />
+			{/* <HomeGarland /> */}
 			<HomeFreiheit />
 			<HomeFestival />
 			<HomeSwiper />

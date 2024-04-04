@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
-import position3 from '../Assets/position3.png';
-import position4 from '../Assets/position4.png';
-import position6 from '../Assets/position6.png';
+import position3 from '../Assets/ProgramPics/1.Programm.jpg';
+import position4 from '../Assets/ProgramPics/2.Programm.jpg';
+import position6 from '../Assets/ProgramPics/3.program.jpg';
 import garland1 from '../Assets/garland1.png';
 import garland2 from '../Assets/garland2.png';
 import garland3 from '../Assets/garland3.png';
@@ -189,7 +189,7 @@ function Schedule() {
 						<div className="hidden md:block">
 							<div>
 								<img
-									className="md:h-[600px]"
+									className="md:h-[600px] border-[12px] border-[#ECECEC] rounded-[18px]"
 									src={dayInfo.poster.imageSrc}
 									alt={`Poster for ${dayInfo.day}`}
 								/>
