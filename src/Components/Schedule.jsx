@@ -5,9 +5,7 @@ import position6 from '../Assets/position6.png';
 import garland1 from '../Assets/garland1.png';
 import garland2 from '../Assets/garland2.png';
 import garland3 from '../Assets/garland3.png';
-import program1 from '../Assets/ProgramPics/1.Programm.jpg'
-import program2 from '../Assets/ProgramPics/2.Programm.jpg'
-import program3 from '../Assets/ProgramPics/3.program.jpg'
+
 
 function Schedule() {
 
@@ -38,7 +36,7 @@ function Schedule() {
 				{
 					Startzeit: '🕘16.00',
 					Filmvorführungen: '🎬Festivaleröffnung: Kurzfilmprogramm FREIHEIT',
-					link: {
+					videolink: {
 						src: 'https://www.youtube.com/watch?v=FwKaBCIGSX8'
 					},
 					Festival: '',
@@ -67,7 +65,7 @@ function Schedule() {
 				{
 					Startzeit: '🕘11.00',
 					Filmvorführungen: '🎬Kurzfilmprogramm RECHTE',
-					link: {
+					videolink: {
 						src: 'https://www.youtube.com/watch?v=06qVacfs6P8&t=3sf'
 					},
 					Standort: '📍Filmtheater am Friedrichshain, Saal 1',
@@ -81,7 +79,7 @@ function Schedule() {
 				{
 					Startzeit: '🕘15.30',
 					Filmvorführungen: '🎬Kurzfilmprogramm MITBESTIMMUNG',
-					link: {
+					videolink: {
 						src: 'https://www.youtube.com/watch?v=7hxH0dS5S5o&t=1s'
 					},
 					Festival: '',
@@ -134,50 +132,60 @@ function Schedule() {
 					<div
 						className={`md:my-5 md:max-w-[1650px] md:m-auto md:flex p-5 justify-between items-center ${dayIndex === 1 ? 'flex-row-reverse items-center md:text-center gap-[50px]' : ''}`}
 					>
-						<div className="w-full">
-							<h2 className="text-shadow md:text-[60px]">{dayInfo.day}</h2>
-							<ul>
-								{dayInfo.events
-									.filter(
-										(event) =>
-											event.Startzeit ||
-											event.Filmvorführungen ||
-											event.Festival ||
-											event.info ||
-											event.Standort
-									)
-									.map((event, eventIndex) => (
-										<li key={eventIndex} className="p-5 sm:p-2">
-											<div className="font-HalcyonMedium text-[12px] md:text-[25px]">
-												{event.Startzeit}
+						<div>
+							{dayInfo.events
+								.filter(
+									(event) =>
+										event.Startzeit ||
+										event.Filmvorführungen ||
+										event.Festival ||
+										event.info ||
+										event.Standort
+								)
+								.map((event, eventIndex) => (
+									<li key={eventIndex} className="p-5 sm:p-2 list-none">
+										<div className="font-HalcyonMedium text-[12px] md:text-[25px]">
+											{event.Startzeit}
+										</div>
+										<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
+											{event.link ? (
+												<a
+													href={event.link.src}
+													target="_blank"
+													rel="noopener noreferrer"
+													onClick={(e) => handleLinkClick(e, event.link)}
+													className="text-blue-500 underline"
+												>
+													{event.Filmvorführungen}
+												</a>
+											) : (
+												<span>{event.Filmvorführungen}</span>
+											)}
+										</div>
+										<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">
+											{event.Festival}
+										</div>
+										<div className="font-bold md:text-[25px]">{event.info}</div>
+										<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
+											{event.Standort}
+										</div>
+										{/* Render second "Trailer" link if event.link.src exists */}
+										{event.videolink && event.videolink.src && (
+											<div>
+												<a
+													href={event.videolink.src}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-blue-500 underline text-[12px] md:text-[25px]"
+												>
+													Trailer
+												</a>
 											</div>
-											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
-												{event.link ? (
-													<a
-														href={event.link.src}
-														target="_blank"
-														rel="noopener noreferrer"
-														onClick={(e) => handleLinkClick(e, event.link)}
-														className="text-blue-500 underline"
-													>
-														{event.Filmvorführungen}
-													</a>
-												) : (
-													<span>{event.Filmvorführungen}</span>
-												)}
-											</div>
-											<div className="font-HalcyonBlack text-[12px] md:text-[25px] whitespace-normal break-normal">
-												{event.Festival}
-											</div>
-											<div className="font-bold md:text-[25px]">{event.info}</div>
-											<div className="font-HalcyonMedium text-[12px] md:text-[25px] whitespace-normal break-normal">
-												{event.Standort}
-											</div>
-										</li>
-									))}
-
-							</ul>
+										)}
+									</li>
+								))}
 						</div>
+
 						<div className="hidden md:block">
 							<div>
 								<img

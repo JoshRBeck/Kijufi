@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import HomeHero from '../Components/HomeHero';
+// import HomeHero from '../Components/HomeHero';
 import HomeInfos from '../Components/HomeInfos';
 import HomeFantasie from '../Components/HomeFantasie';
 import HomeFreiheit from '../Components/HomeFreiheit';
@@ -8,6 +8,7 @@ import HomeFestival from '../Components/HomeFestival';
 import HomeSwiper from '../Components/HomeSwiper';
 // import Countdown from '../Components/Countdown';
 import HomeGarland from '../Components/HomeGarland';
+import YouTubeEmbed from '../Components/PromoVideo';
 
 
 function Home() {
@@ -28,7 +29,7 @@ function Home() {
 			</Helmet>
 			{/* <HomeHero /> */}
 			{/* <Countdown /> */}
-			
+			<YouTubeEmbed />
 			<HomeInfos />
 			<HomeFantasie />
 			<HomeGarland />

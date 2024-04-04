@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import Hamburger from '../Assets/hamburger.png';
 import Cross from '../Assets/cross.png';
 import { MenuLinKs } from '../Data/MenuLinks';
-import Btn from './BtnHeader';
+import Badge from "../Assets/Badge DH 2023_Auszeichnung.png"
+// import Btn from './BtnHeader';
 
 function Header() {
 	const [open, setOpen] = useState(true);
@@ -30,10 +31,13 @@ function Header() {
 						<li className={location.pathname === '/contact' ? 'font-bold' : ''}>
 							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
-						<li>
+						{/* <li>
 							<a href="https://www.yorck.de/specials/gemeinsam-grenzenlos-das-kinderrechte-filmfestival-2023">
 								<Btn text={'Tickets'} backgroundColor="bg-[#E16848]" hoverColor="hover:bg-[#B64021]" />
 							</a>
+						</li> */}
+						<li>
+							<img src={Badge} alt="Badge" height={150} width={100} />
 						</li>
 					</ul>
 				</div>
@@ -51,11 +55,11 @@ function Header() {
 						<li onClick={handleNav} className={location.pathname === '/contact' ? ' font-bold border-b-[1px] px-5 border-white ' : 'border-b-[1px] px-5 border-white '}>
 							<Link to={'contact'}>Kontakt & Infos</Link>
 						</li>
-						<li className="">
+						{/* <li className="">
 							<a href="https://www.yorck.de/specials/gemeinsam-grenzenlos-das-kinderrechte-filmfestival-2023">
 								<Btn text={'Tickets'} backgroundColor="bg-[#333C3A]" hoverColor="hover:bg-[#5BA092]" />
 							</a>
-						</li>
+						</li> */}
 						<p className=" text-[12px]">*Ticketverkauf startet Anfang November 2023</p>
 						<ul className="flex">
 							{MenuLinKs.map((link, index) => (
