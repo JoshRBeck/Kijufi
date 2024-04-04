@@ -4,7 +4,17 @@ const YouTubeEmbed = ({ videoId, title }) => {
   const aspectRatio = (9 / 16) * 100; // 
 
   return (
-    <div className="iframe-container" style={{ width: '70%', margin: '0 auto', overflow: 'hidden', paddingBottom: '4rem' }}>
+    <div className="iframe-container" style={{
+      width: '70%',
+      margin: '0 auto',
+      overflow: 'hidden',
+      paddingBottom: '3rem',
+      marginTop: '120px',
+      '@media (max-width: 768px)': {
+        width: '90%', 
+        marginTop: '80px' 
+      }
+    }}>
       <div style={{ position: 'relative', width: '100%', paddingTop: `${aspectRatio}%` }}>
         <iframe
           title={title}
