@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const YouTubeEmbed = ({ videoId, title }) => {
   const aspectRatio = (9 / 16) * 100; // 
 
@@ -11,8 +12,8 @@ const YouTubeEmbed = ({ videoId, title }) => {
       paddingBottom: '3rem',
       marginTop: '120px',
       '@media (max-width: 768px)': {
-        width: '90%', 
-        marginTop: '80px' 
+        width: '90%',
+        marginTop: '80px'
       }
     }}>
       <div style={{ position: 'relative', width: '100%', paddingTop: `${aspectRatio}%` }}>

@@ -29,7 +29,7 @@ function Home() {
 			</Helmet>
 			{/* <HomeHero /> */}
 			{/* <Countdown /> */}
-			<YouTubeEmbed />
+			<YouTubeEmbed videoId="Sfit78r-SPA" title="Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 (Kino-Trailer)" />
 			<HomeInfos />
 			<HomeFantasie />
 			{/* <HomeGarland /> */}
